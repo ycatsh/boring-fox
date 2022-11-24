@@ -1,0 +1,193 @@
+:root {
+    --color-bg: #191b1c;
+    --color-fg: #636869;
+    --color-link: #c9c9c9;
+    --color-link-visited: #c9c9c9;
+    --color-link-hover: #8ad1cf ;
+}
+
+html{
+  font-family: "C&C Red Alert [INET]";
+  display: flex;
+  flex-flow: row nowrap;  
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background:#191b1c;
+    }
+
+body {
+  background: #191b1c;
+  color: #BBC4C8;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.bar1 {
+  padding-bottom: 40px;
+  background: #2a2d2e;
+  
+}
+.bar2 {
+  padding-bottom: 40px;
+  background: #232628;
+  
+}
+
+.image img {
+  margin-top: -110px;
+  margin-bottom: -10px;
+  padding-left: 200px;
+  width: 80px;
+  height: 80px;
+}
+
+#c {
+  width: 100px;
+  height: 100px;
+  padding-left: 5px;
+  margin-bottom: -19px;
+}
+
+#c2 {
+  width: 100px;
+  height: 100px;
+  padding-left: 5px;
+  margin-bottom: -19px;
+}
+
+#d {
+  width: 90px;
+  height: 90px;
+  padding-left: 670px;
+  margin-right: -30px;
+  margin-bottom: -6px;
+}
+
+#p {
+  width: 100px;
+  height: 100px;
+  padding-left: 650px;
+  margin-bottom: -6px;
+}
+
+#p2 {
+  width: 100px;
+  height: 100px;
+  padding-left: 230px;
+  margin-bottom: -6px;
+}
+
+.time {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 5px;
+  color: #c9c9c9;
+  width: 20%;
+  height: 20%;
+  font-size: 42px;
+  padding-top: 255px;
+  padding-left: 775px;
+}
+
+#clock {
+  font-family: "minecraftia";
+  color: #c9c9c9;
+  
+}
+
+.title {
+  color: #3b3d3f;
+  font-family: "Five Fonts at Freddy's";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 18px;
+  font-size: 14px;
+  padding-top: 0px;
+  margin-top: -72.5px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+}
+
+.head {
+  display: flex;
+  flex-direction: column;
+}
+
+.category {
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+}
+
+.bookmark {
+  padding-top: 60px;
+  padding-bottom: 231px;
+  padding-left: 20px;
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+  max-width: 37.5%;
+  margin: auto;
+  
+}
+
+.bookmarks {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  border-radius: 3px;
+  border-width: 1px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 10px;
+  width: 87.5%;
+  background: #232628;
+}
+
+h {
+  display: flex;
+  font-family: "Five Fonts at Freddy's";
+  font-size: 13px;
+  padding-bottom: 0.5px;
+  padding-left: 2px;
+  letter-spacing: 0.5px;
+  color: #c9c9c9;
+}
+
+li {
+  display: flex;
+  font-family: "Five Fonts at Freddy's";
+  font-size: 11px;
+  list-style-type: none;
+  padding: 2px;
+  letter-spacing: 0.5px;
+}
+
+a:link {
+  text-decoration: none;
+  color: #adadad;
+}
+
+a:visited {
+  color: #adadad;
+}
+
+a:hover {
+  color: #8ad1cf ;
+}
+
