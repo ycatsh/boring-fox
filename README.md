@@ -16,4 +16,4 @@ Preview:
 ### F40 
 
 Preview 
-![image3](https://preview.redd.it/xdiskk14p42a1.png?width=2880&format=png&auto=webps=72b634bd7149a5105ee971be5dc2d4ed3d373cec)
+![image3](https://user-images.githubusercontent.com/91330011/204031110-fb0b9c54-cded-44b9-a545-66fb73c9c431.png)
