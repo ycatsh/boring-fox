@@ -1,0 +1,107 @@
+@import url("tabs/tabs.css");
+
+#TabsToolbar {margin-top:-3.4px!important}
+
+.tab-background[selected]{
+  background: #191b1c !important;
+}
+
+#toolbar-menubar[autohide="true"] >,
+#TabsToolbar {
+  position: fixed;
+  display: block;
+  top: 0px;
+  right:0;
+  height: 40px;
+}
+
+:root[uidensity="compact"] #TabsToolbar > .titlebar-buttonbox-container{ height: 32px }
+
+#toolbar-menubar[inactive] > .titlebar-buttonbox-container{ opacity: 0 }
+
+.titlebar-buttonbox-container > .titlebar-buttonbox{ height: 100%; }
+
+#titlebar{
+  -moz-box-ordinal-group: 2;
+  --tabs-navbar-shadow-size: 0px;
+  --uc-menubar-vertical-overlap: 19px; 
+}
+
+#navigator-toolbox > div{ display: contents }
+.global-notificationbox,
+#tab-notification-deck{ -moz-box-ordinal-group: 2 }
+
+#TabsToolbar .titlebar-spacer{ display: none; }
+#navigator-toolbox::after{ display: none !important; }
+
+@media (-moz-gtk-csd-close-button){ .titlebar-button{ -moz-box-orient: vertical } }
+
+:root:not([chromehidden~="menubar"], [sizemode="fullscreen"]) #toolbar-menubar:not([autohide="true"]) {
+  display: block !important;
+}
+#toolbar-menubar:not([autohide="true"]) > .titlebar-buttonbox-container {
+  visibility: hidden;
+}
+
+/*not working 
+:root menupopup {
+  --menuitem-hover-background-color: #2A2D2E !important;
+  --menu-background-color: #232628 !important;
+  --menu-border-color: #2A2D2E !important;
+  --menu-color: #c9c9c9 !important;
+  --menuitem-disabled-hover-background-color: #2A2D2E !important;
+  --menu-disabled-color: #636869 !important; 
+}
+*/
+
+.titlebar-buttonbox-container{display: none !important}
+
+#alltabs-button {display: none !important;}
+
+#urlbar, .searchbar-textbox {
+  font-size: 13px !important;
+}
+
+.tab-text,
+.tab-label {
+  -moz-box-flex: 1 !important;
+  text-align: left !important;
+  padding-top: 5px !important;
+}
+
+:root {
+  --tab-toolbar-navbar-overlap: 0px !important; 
+  --tab-min-height: 40px !important;
+
+ }
+
+#urlbar-zoom-button { display: none !important; }
+
+#PanelUI-button { margin-top: -5px; margin-bottom: 44px; }
+
+#PanelUI-menu-button {
+
+   padding: 0px !important;
+   max-height: 1px;
+
+   list-style-image: none !important;
+
+}
+
+#PanelUI-menu-button .toolbarbutton-icon { width: 1px !important; }
+#PanelUI-menu-button .toolbarbutton-badge-stack { padding: 0px !important; }
+
+#pageActionButton { display: none !important; }
+#page-action-buttons { display: none !important; }
+
+#reader-mode-button{ display: none !important; }
+
+.tab-secondary-label { display: none !important; }
+
+#urlbar-go-button { display: none !important; }
+
+#identity-permission-box { display: none !important; } 
+
+#tracking-protection-icon-container { display: none !important; }
+
+
