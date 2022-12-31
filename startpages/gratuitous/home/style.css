@@ -1,0 +1,138 @@
+:root {
+    --color-bg: #1d2021;
+    --color-fg: #636869;
+    --color-link: #c9c9c9;
+    --color-link-visited: #c9c9c9;
+    --color-link-hover: #8ad1cf ;
+}
+
+html{
+  font-family: "C&C Red Alert [INET]";
+  display: flex;
+  flex-flow: row nowrap;  
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--color-bg);
+  color: #BBC4C8;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+
+.time {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 5px;
+  color: #c9c9c9;
+  width: 20%;
+  height: 20%;
+  font-size: 42px;
+  padding-top: 255px;
+  padding-left: 775px;
+}
+
+#clock {
+  font-family: "minecraftia";
+  color: #c9c9c9;
+  
+}
+
+.title {
+  color: #3b3d3f;
+  font-family: "Five Fonts at Freddy's";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 18px;
+  font-size: 14px;
+  padding-top: 0px;
+  margin-top: -72.5px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+}
+
+.head {
+  display: flex;
+  flex-direction: column;
+}
+
+.category {
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+}
+
+.bookmark {
+  padding-top: 60px;
+  padding-bottom: 234px;
+  padding-left: 49px;
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+  max-width: 37.5%;
+  margin: auto;
+  
+}
+
+.bookmarks {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  border-radius: 3px;
+  border-width: 1px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 10px;
+  width: 87.5%;
+  background: #1d2021;
+}
+
+h {
+  display: flex;
+  font-family: "Five Fonts at Freddy's";
+  font-size: 13px;
+  padding-bottom: 0.5px;
+  padding-left: 2px;
+  letter-spacing: 0.5px;
+  color: #c9c9c9;
+}
+
+li {
+  display: flex;
+  font-family: "Five Fonts at Freddy's";
+  font-size: 11px;
+  list-style-type: none;
+  padding: 2px;
+  letter-spacing: 0.5px;
+}
+
+a:link {
+  text-decoration: none;
+  color: #adadad;
+}
+
+a:visited {
+  color: #adadad;
+}
+
+a:hover {
+  color: #8ad1cf ;
+}
+

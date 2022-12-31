@@ -1,0 +1,136 @@
+:root #tabbrowser-tabs{
+	--tab-toolbar-navbar-overlap: 0px !important; 
+	--tab-min-height: 35px !important;
+}
+
+.tab-close-button{ 
+	margin-top: 3px !important;
+}
+
+:root .tabbrowser-tab:not([pinned]) {
+	min-width: 100px !important;
+  }
+
+#tabs-newtab-button{
+	margin-top: 4px !important;
+}
+
+#TabsToolbar {
+	height: var(--tab-min-height) !important;
+}
+
+:root .tabbrowser-tab:not([selected=true]):not([multiselected=true]):not([beforeselected-visible="true"]) .tab-background {
+    border-right: 1.5px solid rgb(111, 119, 122, 0.3) !important;
+}
+:root .tabbrowser-tab:not([selected=true]):not([multiselected=true]) .tab-background {
+	border-radius: 0 !important;
+}
+
+.tabbrowser-tab
+{
+	min-height: var(--tab-min-height) !important;
+	overflow: visible !important;
+	font-size: 13px !important;
+	background: 0 !important;
+	border: none !important;
+}
+
+.tabbrowser-tab:not([last-visible-tab])
+{
+	margin-inline-end: -0.5px !important;
+}
+
+.tab-icon-image,
+.tab-sharing-icon-overlay,
+.tab-icon-sound,
+.tab-close-button
+{
+	margin-bottom: 2px !important;
+}
+
+.tabbrowser-tab::before,
+.tabbrowser-tab::after,
+.tab-line
+{
+	display: none !important;
+}
+
+.tab-background
+{
+	border-radius: 0px 0px 0 0 !important;
+	position: relative !important;
+	border: none !important;
+	visibility: visible !important;
+}
+
+.tab-icon-image
+{
+	margin-bottom: -2px !important;
+}
+
+.tab-label-container
+{
+	margin-top: 2px !important;
+	opacity: 1 !important;
+}
+
+.tabbrowser-tab[fadein] .tab-close-button
+{
+	visibility: visible !important;
+}
+
+.tabbrowser-tab[pinned] .tab-close-button
+{
+	visibility: hidden !important;
+}
+
+.tab-icon-overlay[pinned]
+{
+	margin: 0 !important;
+	margin-inline-start: -16px !important;
+}
+
+.tab-icon-image[pinned],
+.tab-throbber[pinned]
+{
+	margin: auto !important;
+}
+
+.tab-content[pinned]
+{
+	width: 40px !important;
+	padding: 0px !important;
+	padding-inline-start: 12px !important;
+	padding-inline-end: 0px !important;
+}
+
+.tab-label-container[pinned],
+.tab-close-button[pinned]
+{
+	visibility: hidden !important;
+} 
+
+#tabbrowser-tabs #tabs-newtab-button
+{
+	margin-inline-start: 2px !important;
+	padding-left: 2px !important;
+	padding-right: 2px !important;
+	color: var(--toolbar-color) !important;
+}
+
+#tabbrowser-tabs[overflow] .tabbrowser-arrowscrollbox
+{
+	border-radius: 0px 0px 0 0 !important;
+	background-color: rgba(0, 0, 0, .1) !important;
+	padding-inline-start: 0px !important;
+}
+
+#tabbrowser-tabs[overflow]
+{
+	margin-inline-start: 8px !important;
+}
+
+.tab-bottom-line
+{
+	display: none !important;
+}
