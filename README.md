@@ -5,6 +5,7 @@ Comfortable, elegant, and minimalist firefox themes
 ### Gratuitous
 
 Preview:
+![image](https://user-images.githubusercontent.com/91330011/210130702-6fb82055-fb88-4268-b335-0d04f3fe6817.png)
 
 ### Idyllic
 
