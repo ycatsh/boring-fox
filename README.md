@@ -8,11 +8,11 @@ Comfortable, elegant, and minimalist firefox themes
 
 1. On the firefox search bar, enter `about:config` and set `toolkit.legacyUserProfileCustomizations.stylesheets` to `true` to enable CSS customization. 
 
-2. In your profile directory make 2 folders `startpage` and `chrome` inside `chrome/`, paste the `userChrome.css` and ``userContent.css` files 
+2. In your profile directory make 2 folders `startpage` and `chrome`, inside `chrome/`, paste the `userChrome.css` and ``userContent.css` files 
 
 ### Newtab as startpage
 
-1. Choose a theme you like and paste the content from its corresponding folder in the repository to the `startpage` folder you just created 
+1. Choose a theme and paste the content from its corresponding folder from the repository to the `startpage` folder you just created 
 
 2. Navigate to your firefox directory, under `default/prefs` create a `autoconfig.js` file
     ```javascript
@@ -23,7 +23,7 @@ Comfortable, elegant, and minimalist firefox themes
     ```
     paste this code in the file and save
 
-3. Navigate one directory back `defaults/` and create a `autoconfig.cfg` file
+3. Navigate one directory back to `defaults/` and create a `autoconfig.cfg` file
     ```javascript
     // 
     var {classes:Cc,interfaces:Ci,utils:Cu} = Components; var newTabURL = "file:///PATH_TO_YOUR_START_PAGE.html";
