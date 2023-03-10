@@ -2,6 +2,43 @@
 
 Comfortable, elegant, and minimalist firefox themes
 
+## Intructions 
+
+### userChrome.css
+
+1. On the firefox search bar, enter `about:config` and set `toolkit.legacyUserProfileCustomizations.stylesheets` to `true` to enable CSS customization. 
+
+2. In your profile directory make 2 folders `startpage` and `chrome` inside `chrome/`, paste the `userChrome.css` and ``userContent.css` files 
+
+### Newtab as startpage
+
+1. Choose a theme you like and paste the content from its corresponding folder in the repository to the `startpage` folder you just created 
+
+2. Navigate to your firefox directory, under `default/prefs` create a `autoconfig.js` file
+    ```javascript
+    //
+    pref("general.config.filename", "autoconfig.cfg");
+    pref("general.config.obscure_value", 0);
+    pref("general.config.sandbox_enabled", false); 
+    ```
+    paste this code in the file and save
+
+3. Navigate one directory back `defaults/` and create a `autoconfig.cfg` file
+    ```javascript
+    // 
+    var {classes:Cc,interfaces:Ci,utils:Cu} = Components; var newTabURL = "file:///PATH_TO_YOUR_START_PAGE.html";
+    aboutNewTabService = Cc["@mozilla.org/browser/aboutnewtab-service;1"].getService(Ci.nsIAboutNewTabService);
+    aboutNewTabService.newTabURL = newTabURL; 
+    ```
+    make sure to put the path of the index.html file in your `startpage` folder
+
+4. Change homepage under firefox settings to 'Custom URLs' and paste in the path. 
+
+5. Restart Firefox. 
+
+
+## Themes 
+
 ### Gratuitous
 
 Preview:
