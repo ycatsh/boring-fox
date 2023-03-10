@@ -8,7 +8,7 @@ Comfortable, elegant, and minimalist firefox themes
 
 1. On the firefox search bar, enter `about:config` and set `toolkit.legacyUserProfileCustomizations.stylesheets` to `true` to enable CSS customization. 
 
-2. In your profile directory make 2 folders `startpage` and `chrome`, inside `chrome/`, paste the `userChrome.css` and ``userContent.css` files 
+2. In your profile directory make 2 folders `startpage` and `chrome`, inside `chrome/`, paste the `userChrome.css` and `userContent.css` files 
 
 ### Newtab as startpage
 
