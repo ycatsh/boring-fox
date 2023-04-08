@@ -40,7 +40,6 @@
 	margin-inline-end: -0.5px !important;
 }
 
-.tab-icon-image,
 .tab-sharing-icon-overlay,
 .tab-icon-sound,
 .tab-close-button
@@ -65,7 +64,7 @@
 
 .tab-icon-image
 {
-	margin-bottom: -2px !important;
+	margin-bottom: 2px !important;
 }
 
 .tab-label-container
