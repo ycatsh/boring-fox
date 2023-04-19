@@ -34,7 +34,7 @@ aspect-ratio: 1/1;
 
 .right {
 grid-area: right;
-height: 40%;
+height: 350px;
 width: 100%;
 background-color: #3b4568;
 border-radius: 4px;
@@ -72,7 +72,7 @@ padding-top: 20px;
 
 input {
   caret-color: #3b4568;
- }
+}
 
 .category {
 display: flex;

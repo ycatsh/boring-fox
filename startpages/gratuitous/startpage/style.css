@@ -4,10 +4,11 @@
     --color-link: #c9c9c9;
     --color-link-visited: #c9c9c9;
     --color-link-hover: #8ad1cf ;
+    --clock-font: "minecraftia";
+    --text-font: "Five Fonts at Freddy's";
 }
 
 html{
-  font-family: "C&C Red Alert [INET]";
   display: flex;
   flex-flow: row nowrap;  
   justify-content: center;
@@ -30,34 +31,32 @@ body {
 
 
 .time {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  transform: translate(-50%, -50%);
+  font-family: var(--clock-font);
+  position: absolute;
+  text-align: center;
+  top: 38%;
+  left: 50%;
+  font-size: 42px;
   letter-spacing: 5px;
   color: #c9c9c9;
-  width: 20%;
-  height: 20%;
-  font-size: 42px;
-  padding-top: 255px;
-  padding-left: 775px;
 }
 
-#clock {
-  font-family: "minecraftia";
-  color: #c9c9c9;
-  
+@media (max-width: 768px) {
+  .time {
+    font-size: 32px;
+  }
 }
 
 .title {
+  font-family: var(--text-font);
+  transform: translate(-50%, -50%);
+  position: absolute;
+  text-align: center;
+  top: 42%;
+  left: 50%;
   color: #3b3d3f;
-  font-family: "Five Fonts at Freddy's";
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-left: 18px;
   font-size: 14px;
-  padding-top: 0px;
-  margin-top: -72.5px;
 }
 
 .container {
@@ -68,59 +67,38 @@ body {
   justify-content: center;
 }
 
-.head {
-  display: flex;
-  flex-direction: column;
-}
 
 .category {
   display: flex;
   flex-direction: column;
-  width: 150px;
+  width: 170px;
 }
 
 .bookmark {
-  padding-top: 60px;
-  padding-bottom: 234px;
-  padding-left: 49px;
+  position: absolute;
   display: flex;
-  justify-content: center;
   justify-content: space-evenly;
-  max-width: 37.5%;
+  transform: translate(-50%, -50%);
   margin: auto;
-  
+  top: 56%;
+  left: calc(50% + 2%);
 }
 
 .bookmarks {
   display: flex;
   flex-direction: column;
   align-items: left;
-  border-radius: 3px;
-  border-width: 1px;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  padding-left: 10px;
-  width: 87.5%;
   background: #1d2021;
 }
 
-h {
-  display: flex;
-  font-family: "Five Fonts at Freddy's";
-  font-size: 13px;
-  padding-bottom: 0.5px;
-  padding-left: 2px;
-  letter-spacing: 0.5px;
-  color: #c9c9c9;
-}
 
 li {
   display: flex;
-  font-family: "Five Fonts at Freddy's";
-  font-size: 11px;
   list-style-type: none;
+  font-family: var(--text-font);
+  font-size: 11px;
   padding: 2px;
-  letter-spacing: 0.5px;
+  list-style-type: none;
 }
 
 a:link {
