@@ -1,0 +1,187 @@
+:root {
+    --color-bg: #191b1c;
+    --color-fg: #636869;
+    --color-link: #c9c9c9;
+    --color-link-visited: #c9c9c9;
+    --color-link-hover: #8ad1cf ;
+    --clock-font: "minecraftia";
+    --text-font: "Five Fonts at Freddy's";
+}
+
+
+html{
+  display: flex;
+  flex-flow: row nowrap;  
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background:#191b1c;
+}
+
+
+body {
+  background: #191b1c;
+  color: #BBC4C8;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-y: hidden;
+}
+
+
+.bars {
+  position: relative;
+  height: 100vh;
+}
+
+.bar2 {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  background-color: #232628;
+}
+
+.bar1 {
+  position: fixed;
+  bottom: 40px;
+  width: 100%;
+  height: 40px;
+  background-color: #2a2d2e;
+}
+
+
+.image img {
+  position: fixed;
+  top: 83.6%;
+  width: 80px;
+  height: 80px;
+}
+
+#cat {
+  margin-left: 32%;
+}
+
+#c {
+  margin-left: 75%;
+  margin-top: 8px;
+}
+
+#c2 {
+  margin-top: 8px;
+  margin-left: 22%;
+}
+
+#d {
+  margin-left: 670px;
+}
+
+#p {
+  margin-left: 70%;
+}
+
+#p2 {
+  margin-left: 17%;
+}
+
+.time {
+  transform: translate(-50%, -50%);
+  font-family: var(--clock-font);
+  position: absolute;
+  text-align: center;
+  top: 30%;
+  left: 50%;
+  font-size: 42px;
+  letter-spacing: 5px;
+  color: #c9c9c9;
+}
+
+
+@media (max-width: 768px) {
+  .time {
+    font-size: 32px;
+  }
+}
+
+.title {
+  font-family: var(--text-font);
+  transform: translate(-50%, -50%);
+  position: absolute;
+  text-align: center;
+  top: 35%;
+  left: 50%;
+  color: #3b3d3f;
+  font-size: 14px;
+}
+
+.head {
+  display: flex;
+  flex-direction: column;
+}
+
+.category {
+  display: flex;
+  flex-direction: column;
+  width: 180px;
+}
+
+.bookmark {
+  position: absolute;
+  display: flex;
+  justify-content: space-evenly;
+  transform: translate(-50%, -50%);
+  margin: auto;
+  top: 52%;
+  left: 50%;
+}
+
+.bookmarks {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  border-radius: 3px;
+  border-width: 1px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 10px;
+  width: 75%;
+  background: #232628;
+}
+
+h {
+  display: flex;
+  font-family: var(--text-font);
+  font-size: 13px;
+  padding-bottom: 0.5px;
+  letter-spacing: 0.5px;
+  padding-left: 2px;
+  color: #c9c9c9;
+}
+
+li {
+  display: flex;
+  font-family: var(--text-font);
+  font-size: 11px;
+  list-style-type: none;
+  padding: 2px;
+  letter-spacing: 0.5px;
+}
+
+a:link {
+  text-decoration: none;
+  color: #adadad;
+}
+
+a:visited {
+  color: #adadad;
+}
+
+a:hover {
+  color: #8ad1cf ;
+}
+
