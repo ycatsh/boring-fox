@@ -6,9 +6,13 @@ Comfortable, elegant, and minimalist firefox themes
 
 ### userChrome.css
 
-1. On the firefox search bar, enter `about:config` and set `toolkit.legacyUserProfileCustomizations.stylesheets` to `true` to enable CSS customization. 
+1. Download the Firefox Color add-on from [here](https://addons.mozilla.org/en-US/firefox/addon/firefox-color/)  
 
-2. In your profile directory make 2 folders `startpage` and `chrome`, inside `chrome/`, paste the `userChrome.css` and `userContent.css` files 
+2. After you set up the add-on, click on [this](https://color.firefox.com/?theme=XQAAAAKEAwAAAAAAAABBKYhm849SCicxcUUSqiuG_ebZUZXOFqqYn_O4akhBDGiaWd0FjBOq31N1Flo2QaWxtQ6soXvQmPL_Upd3YVaTP-QTAEKfKo8_hUfLueZP0k-rmfVo_jfFNFb9HyVOXU-NXjQTv-zSu7Kg9-Tq4byjMV_kXKgDR38tZi2Sj_zhU8Yx8VVEDTHPt_Hrq_c76cKBmBJ7cdswAG8dWDtuxHy-h8_3x4rFOA9xicLWh1BQYBcy6btytJVQesYC7-wijAstUFJCME_7oZf8zWtJwxFNeZWnIlN0udLKf9nEhZ8dGv2LxOyfB9o6IxUESTxlqTIxJd6KXPKluMOGt7dQEEFyS5cdLcpkX0tJ0783fdze03GDAFjNR4SgEdnTOyL2G7UFsfP7SQmn35SPgaMXALaNe85AqRcMUx1yZ2OW8sLmiCDaoXA9kWgKSBae2ugq6SbaAT2Zft0--OQgTJtn8Y9Vonp3a7JRa-8kQBDrF880_ff6Cg) link to add the appropriate colors to your tabs, etc.  
+
+3. On the firefox search bar, enter `about:config` and set `toolkit.legacyUserProfileCustomizations.stylesheets` to `true` to enable CSS customization. 
+
+4. In your profile directory make 2 folders `startpage` and `chrome`, inside `chrome/`, paste the `userChrome.css` and `userContent.css` files 
 
 ### Newtab as startpage
 
