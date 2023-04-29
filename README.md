@@ -29,10 +29,14 @@ Comfortable, elegant, and minimalist firefox themes
 
 3. Navigate one directory back to `defaults/` and create a `autoconfig.cfg` file
     ```javascript
-    // 
-    var {classes:Cc,interfaces:Ci,utils:Cu} = Components; var newTabURL = "file:///PATH_TO_YOUR_START_PAGE.html";
-    aboutNewTabService = Cc["@mozilla.org/browser/aboutnewtab-service;1"].getService(Ci.nsIAboutNewTabService);
-    aboutNewTabService.newTabURL = newTabURL; 
+    //  
+    var {classes:Cc,interfaces:Ci,utils:Cu} = Components;  
+    
+    try {  
+    Cu.import("resource:///modules/AboutNewTab.jsm");  
+    var newTabURL = "file:///PATH_TO_YOUR_START_PAGE.html";  
+    AboutNewTab.newTabURL = newTabURL;  
+    } catch(e){Cu.reportError(e);} // report errors in the Browser Console  
     ```
     make sure to put the path of the index.html file in your `startpage` folder
 
