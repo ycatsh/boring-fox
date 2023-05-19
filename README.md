@@ -1,8 +1,9 @@
-## Firefox Themes
+<h1 align="center">Firefox Themes</h1>  
 
-Comfortable, elegant, and minimalist firefox themes
+This is a collection of custom designed Firefox themes. These themes are perfect for those who prefer comfortable, minimalistic, elegant, and simple designs. To download and use them please read the following instructions.
 
 ## Intructions 
+These instructions provide a step-by-step guide for downloading and applying themes to customize your Firefox. The process is divided into two parts: styling the Firefox elements and modifying the new tab and homepage with the custom theme.
 
 ### userChrome.css
 
@@ -14,7 +15,7 @@ Comfortable, elegant, and minimalist firefox themes
 
 4. In your profile directory make 2 folders `startpage` and `chrome`, inside `chrome/`, paste `userChrome.css`, `userContent.css`, and `tabs/` from the `chrome` directory in this repo.
 
-### Newtab as startpage
+### New tab as custom page
 
 1. Choose a theme and paste the content from its corresponding folder from the repository to the `startpage` folder you just created 
 
@@ -48,22 +49,14 @@ Comfortable, elegant, and minimalist firefox themes
 ## Themes 
 
 ### Gratuitous
-
-Preview:
 ![image](https://user-images.githubusercontent.com/91330011/210130702-6fb82055-fb88-4268-b335-0d04f3fe6817.png)
 
 ### Idyllic
-
-Preview:
 ![image1](https://user-images.githubusercontent.com/91330011/162780403-f4b27beb-ea1c-4709-a179-bc70b1588140.png)
 Check out cascade (for the one line look): https://github.com/andreasgrafen/cascade
 
-### Cat
-
-Preview:
+### Busy Cat
 ![image2](https://user-images.githubusercontent.com/91330011/203773014-c2db8c2d-7010-419a-8dae-46dcd79bc996.png)
 
 ### F40
-
-Preview
 ![image3](https://user-images.githubusercontent.com/91330011/204031110-fb0b9c54-cded-44b9-a545-66fb73c9c431.png)
