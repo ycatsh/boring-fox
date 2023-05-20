@@ -1,4 +1,4 @@
-![graphic](https://github.com/ycatsh/firefox-themes/assets/91330011/102f7902-6e15-44f1-a846-939dce72cde2)
+![graphic](https://github.com/ycatsh/smart-fox/assets/91330011/8872af68-711f-480b-9b7e-2304402c0c42)
 <br>
 
 Smart-Fox is primarily developed with [JavaScript](https://en.wikipedia.org/wiki/JavaScript) and [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS). It offers a sophisticated and intuitive browsing experience for users seeking efficiency and convenience. With its minimal design and relevant features, Smart-Fox combines aesthetics with functionality seamlessly. The Smart-Fox theme enhances your Firefox homepage by providing easy access to music control (under development), bookmarks, daily notes, and weather widgets within a single, cohesive interface.
