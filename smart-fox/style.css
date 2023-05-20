@@ -1,0 +1,266 @@
+:root {
+  --color-bg: #1d2021;
+  --color-fg: #636869;
+  --color-link: #c9c9c9;
+  --color-link-visited: #c9c9c9;
+  --color-link-hover: #8ad1cf ;
+  --clock-font: "minecraftia";
+  --text-font: "Coder's Crux";
+}
+
+
+html{
+  display: flex;
+  flex-flow: row nowrap;  
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--color-bg);
+  color: #BBC4C8;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.box {
+  width: 600px;
+  height: 300px;
+  padding: 16px;
+  border: 2px solid #3b3d3f;
+  position: relative; 
+}
+
+
+.tab {
+  border: none;
+  background-color: transparent;
+  width: 30px;
+  height: 22px;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 12px;
+}
+
+#left {
+  top: 0; 
+  left: 0; 
+  display: flex;
+  justify-content: flex-start; 
+  position: absolute; 
+}
+
+#right {
+  top: 0; 
+  right: 0; 
+  display: flex;
+  justify-content: flex-end; 
+  position: absolute; 
+}
+
+
+#tab-right{
+  font-family: var(--text-font);
+  font-size: 20px;
+  width: 60px;
+}
+
+.note-buttons{
+  bottom: 0; 
+  right: 0; 
+  display: flex;
+  justify-content: flex-end; 
+  position: absolute; 
+}
+
+#button-br{
+  font-family: var(--text-font);
+  font-size: 20px;
+  width: 60px;
+  background-color: #3b3d3f;
+  transition: all ease-in-out 0.3s;
+}
+
+#notes-button{
+  border-right: 2px solid;
+}
+
+#button-br:hover{
+  background-color: #2f3132;
+}
+
+#notes-input{
+  bottom: 0; 
+  left: 0; 
+  width: 80.5%;
+  display: flex;
+  height: 20px;
+  justify-content: flex-start; 
+  position: absolute; 
+  border: none;
+  font-family: var(--text-font);
+  background-color: #3b3d3f;
+  color: #ffffff;
+  font-size: 20px;
+  outline: none;
+  caret-color: transparent;
+}
+
+
+#notes-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  font-family: var(--text-font);
+  text-align: left;
+  width: 100%;
+  top: 50%;
+  left: 51%;
+  max-height: 70%;
+  height: 400px;
+  overflow: auto;
+  padding: 10px;
+  scrollbar-color: transparent transparent;
+}
+
+.note {
+  background-color: #3b3d3f;
+  color: #ffffff;
+  padding: 10px;
+  margin: 5px;
+  width: calc(33.33% - 10px);
+  min-width: 150px;
+  box-sizing: border-box;
+}
+
+.note-content {
+  font-size: 20px;
+}
+
+.note-date {
+  font-size: 16px;
+  color: #bebebe;
+  margin-top: 5px;
+}
+
+
+.tab.active {
+  color: #ffffff;
+  background-color: #3b3d3f;
+}
+
+.content {
+  display: none;
+  margin-top: 16px;
+  font-size: 18px;
+  color: #555;
+}
+
+
+.content.active {
+  display: block;
+}
+
+.random-line{
+  display: flex;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  font-family: var(--text-font);
+  text-align: center;
+  font-size: 24px;
+  width: 53%;
+  top: 25%;
+  left: 52%;
+}
+
+#weather-info {
+  display: flex;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  font-family: var(--text-font);
+  color: #ffffff;
+  text-align: center;
+  font-size: 28px;
+  top: 75%;
+  left: 50%;
+}
+
+#weather-icon{
+  display: flex;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 45%;
+  left: 50%;
+}
+
+#weather-icon i{
+  font-size: 4em;
+}
+
+.category {
+  display: flex;
+  flex-direction: column;
+  width: 130px;
+}
+
+.bookmark {
+  position: absolute;
+  display: flex;
+  justify-content: space-evenly;
+  transform: translate(-50%, -50%);
+  margin: auto;
+  top: 60%;
+  left: calc(50% + 5.5%);
+}
+
+.bookmarks {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+.heading{
+  font-family: var(--text-font);
+  color: #d1d1d1;
+  font-size: 22px;
+  padding: 2px;
+}
+
+li {
+  display: flex;
+  list-style-type: none;
+  font-family: var(--text-font);
+  font-size: 20px;
+  padding: 2px;
+  list-style-type: none;
+}
+
+a:link {
+  text-decoration: none;
+  color: #adadad;
+}
+
+a:visited {
+  color: #adadad;
+}
+
+a:hover {
+  color: #8ad1cf ;
+}
