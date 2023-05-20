@@ -1,4 +1,8 @@
 ![graphic](https://github.com/ycatsh/firefox-themes/assets/91330011/86523a74-7788-4164-8439-0fe0a207d526)
+<br>
+
+![stars](https://img.shields.io/github/stars/ycatsh/firefox-themes?logo=github)
+![issues](https://img.shields.io/github/issues-closed/ycatsh/firefox-themes?logo=github)
 
 This is a collection of custom Firefox themes that I designed. These themes are perfect for those who prefer comfortable, minimalistic, elegant, and simple designs. To download and use them please read the following instructions.
 
