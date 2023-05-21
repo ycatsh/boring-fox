@@ -7,124 +7,40 @@
     <link rel="icon" type="image/x-icon" href="icons/favicon.png">
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="https://kit.fontawesome.com/40ec461a10.js" crossorigin="anonymous"></script>
-    <script src='scripts/time.js'></script>
-    <script src='scripts/notes.js'></script>
-    <script src='scripts/temp.js'></script>
   </head>
 
-  <body onload="realtimeClock()">
-    <div class="container">
+  <body onload="real_time_clock()">
 
+    <div class="container">
       <div class="box">
 
-        <div class="tabs" id="right">
-          <button id="tab-right" class="tab" onclick="show_content('content6')">music</button>
-          <button id="tab-right" class="tab" onclick="show_content('content7')">weather</button>
-          <button id="tab-right" class="tab" onclick="show_content('content8')">notes</button>
-        </div>
-
-        <div class="tabs" id="left">
-          <button class="tab active" onclick="show_content('content1')">1</button>
-          <button class="tab" onclick="show_content('content2')">2</button>
-          <button class="tab" onclick="show_content('content3')">3</button>
-          <button class="tab" onclick="show_content('content4')">4</button>
-          <button class="tab" onclick="show_content('content5')">5</button>
-        </div>
-
-
-        <div class="content active" id="content1">
-
-          <div class="random-line">better not be slacking it's&nbsp;<span id="clock"></span></div>
-
-          <div class="bookmark">
-            <div class="category">
-              <div class="bookmarks">
-                <div class="heading">work</div>
-                <li><a href="https://gmail.com">gmail</a></li>
-                <li><a href="https://lichess.org/">lichess</a></li>
-                <li><a href="https://adventofcode.com/">advent</a></li>
-                <li><a href="https://linkedin.com">linkedin</a></li>
-              </div>
-            </div>
+        <div class="tabs" id="right"></div>
+        <div class="tabs" id="left"></div>
       
-            <div class="category">
-              <div class="bookmarks">
-                <div class="heading">dev</div>
-                <li><a href="https://github.com/">github</a></li>
-                <li><a href="https://docs.google.com/document/u/0/">documents</a></li>
-                <li><a href="https://docs.google.com/spreadsheets/u/0/">sheets</a></li>
-                <li><a href="https://discord.com/developers/applications">devportal</a></li>
-              </div>
-            </div>
+        <div class="content-container">
 
-            <div class="category">
-              <div class="bookmarks">
-                <div class="heading">social</div>
-                <li><a href="https://reddit.com/">reddit</a></li>
-                <li><a href="https://instagram.com/">instagram</a></li>
-                <li><a href="https://twitter.com/">twitter</a></li>
-                <li><a href="https://discord.com/channels/@me">discord</a></li>
-              </div>
-            </div>
-
-            <div class="category">
-              <div class="bookmarks">
-                <div class="heading">media</div>
-                <li><a href="https://youtube.com/">youtube</a></li>
-                <li><a href="https://primevideo.com/">prime video</a></li>
-                <li><a href="https://twitch.tv/">twitch</a></li>
-                <li><a href="https://netflix.com/">netflix</a></li>
-              </div>
-            </div>
-
+          <div class="content" id="content5">
+            <div id="weather-icon"></div>
+            <div id="weather-info"></div>
           </div>
-        </div>
 
-
-        <div class="content" id="content2">
-          <!--you can add more bookmarks here using the same format in the previous divs-->
-        </div>
-
-
-        <div class="content" id="content3">
-          <!--you can add more bookmarks here using the same format in the previous divs-->
-        </div>
-
-
-        <div class="content" id="content4">
-          <!--you can add more bookmarks here using the same format in the previous divs-->
-        </div>
-
-
-        <div class="content" id="content5">
-          <!--you can add more bookmarks here using the same format in the previous divs-->
-        </div>
-
-
-        <div class="content" id="content6">
-          <!--you can add more bookmarks here using the same format in the previous divs-->
-        </div>
-
-
-        <div class="content" id="content7">
-          <div id="weather-icon"></div>
-          <div id="weather-info"></div>
-        </div>
-
-
-        <div class="content" id="content8">
-
-          <input id="notes-input" placeholder="create note"></input>
-          <div class="note-buttons">
-            <button id="button-br" class="tab" onclick="add_note()">add</button>
-            <button id="button-br" class="tab" onclick="clear_notes()">clear</button>
+          <div class="content" id="content6">
+            <input id="notes-input" placeholder="create note"></input>
+            <div class="note-buttons">
+              <button id="button-br" class="tab" onclick="add_note()">add</button>
+              <button id="button-br" class="tab" onclick="clear_notes()">clear</button>
+            </div>
+            <div class="notes-list" id="notes-list"></div>
           </div>
-          <div class="notes-list" id="notes-list"></div>
 
         </div>
 
       </div>
-    </div>  
+    </div>
+
     <script src='scripts/tabs.js'></script> 
+    <script src='scripts/time.js'></script>
+    <script src='scripts/notes.js'></script>
+    <script src='scripts/temp.js'></script>
   </body>
 </html>

@@ -1,7 +1,7 @@
 window.addEventListener('load', () => {
     const weather_info = document.getElementById('weather-info');
     const weather_icon = document.getElementById('weather-icon');
-    const api_key = 'key'; //Example (put your API key here)
+    const api_key = 'KEY'; //Example (put your API key here)
     const location = 'London'; //Example (change this to your city)
 
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${api_key}`;
