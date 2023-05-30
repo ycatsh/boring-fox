@@ -2,7 +2,7 @@ function create_tabs() {
 	var tabs_left = document.getElementById("left");
 	var tabs_right = document.getElementById("right");
 	var container = document.querySelector(".content-container");
-
+                                                                                
 	for (var i = 0; i < data.length; i++) {
 		var tab = document.createElement("button");
 		var content = document.createElement("div");
@@ -12,7 +12,7 @@ function create_tabs() {
 		tab.addEventListener("click", show_content);
 		tab.dataset.contentId = data[i].id;
 
-		if (i <= 3){
+		if (i <= 2){
 			content.className = "content";
 			content.id = data[i].id;
 		}
@@ -27,8 +27,8 @@ function create_tabs() {
 		container.appendChild(content)
 	}
 }
-
-
+                                                                                
+                                                                                
 function show_content(event) {
 	var content_id = event.currentTarget.dataset.contentId;
 	var contents = document.getElementsByClassName("content");
@@ -54,8 +54,8 @@ function show_content(event) {
 	}
 	event.currentTarget.classList.add("active");
 }
-
-
+                                                                                
+                                                                                
 const data = [
 	{
 		id: "content1", 
@@ -63,7 +63,7 @@ const data = [
 		content: `
 		
 		<div class="random-line">better not be slacking it's&nbsp;<span id="clock"></span></div>
-
+                                                                                
 		<div class="bookmark">
 		  <div class="category">
 			<div class="bookmarks">
@@ -74,7 +74,7 @@ const data = [
 			  <li><a href="https://linkedin.com">linkedin</a></li>
 			</div>
 		  </div>
-	
+                                                                                	
 		  <div class="category">
 			<div class="bookmarks">
 			  <div class="heading">dev</div>
@@ -94,7 +94,7 @@ const data = [
 			  <li><a href="https://discord.com/channels/@me">discord</a></li>
 			</div>
 		  </div>
-
+                                                                                
 		  <div class="category">
 			<div class="bookmarks">
 			  <div class="heading">media</div>
@@ -106,8 +106,8 @@ const data = [
 		  </div>
 		</div>` 
 	},
-
-
+                                                                                                                                                                
+                                                                                                                                                                
 	{
 		id: "content2", 
 		label: "2", 
@@ -124,7 +124,7 @@ const data = [
                   <li><a href="https://flask.palletsprojects.com/en/2.3.x/">flask</a></li>
               </div>
             </div>
-
+                                                                                
             <div class="category">
               <div class="bookmarks">
                 <div class="heading">shop</div>
@@ -134,7 +134,7 @@ const data = [
                   <li><a href="https://www.nintendo.com/store/">eshop</a></li>
               </div>
             </div>
-
+                                                                                
 			<div class="category">
 			  <div class="bookmarks">
 			    <div class="heading">learn</div>
@@ -142,35 +142,51 @@ const data = [
 				  <li><a href="https://www.kaggle.com/">kaggle</a></li>
 			  </div>
 		  	</div>
-
+                                                                                
           </div>` 
 	},
-
+                                                                                
 	{
 		id: "content3", 
 		label: "3", 
 		content: ""
 	},
-
+                                                                                
 	{
 		id: "content4", 
-		label: "music", 
-		content: ""
+		label: "tools",
 	},
-
+                                                                                
 	{
 		id: "content5", 
 		label: "weather", 
 	},
-
+                                                                                
 	{
 		id: "content6", 
 		label: "notes", 
 	},
 ];
-  
-
+                                                                                
+                                                                                
+                                                                                
 create_tabs();
-
+                                                                                
 var default_tab = document.querySelector('.tab[data-content-id="content1"]');
 show_content({ currentTarget: default_tab });
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                 
