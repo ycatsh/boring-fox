@@ -4,7 +4,7 @@
   --color-link: #c9c9c9;
   --color-link-visited: #c9c9c9;
   --color-link-hover: #8ad1cf ;
-  --clock-font: "minecraftia";
+  --clock-font: "Minecraftia";
   --text-font: "Coder's Crux";
 }
 
@@ -29,6 +29,7 @@ body {
   margin: 0;
   padding: 0;
 }
+
 
 .container {
   display: flex;
@@ -190,13 +191,104 @@ body {
   left: 52%;
 }
 
-#weather-info {
+#col-conv-info{
   display: flex;
   position: absolute;
+  justify-content: center;
   transform: translate(-50%, -50%);
   font-family: var(--text-font);
   color: #ffffff;
   text-align: center;
+  width: 100%;
+  font-size: 24px;
+  top: 65%;
+  left: 50%;
+}
+
+#curr-conv-info{
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  transform: translate(-50%, -50%);
+  font-family: var(--text-font);
+  color: #ffffff;
+  text-align: center;
+  width: 100%;
+  font-size: 24px;
+  top: 23%;
+  left: 50%;
+}
+
+#rate-conv-info{
+  display: flex;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  font-family: var(--text-font);
+  color: #bebebe;
+  text-align: left;
+  width: 55%;
+  font-size: 20px;
+  top: 48%;
+  left: 50%;
+}
+
+.currency{
+  display: flex;
+  position: absolute;
+  justify-content: space-between;
+  width: 60%;
+  transform: translate(-50%, -50%);
+  font-family: var(--text-font);
+  left: 50%;
+  top: 35%;
+}
+
+.currency input{
+  background-color: transparent;
+  height: 110%;
+  width: 60%;
+  outline: none;
+  color: #ffffff;
+  border: 1px solid #3b3d3f;
+}
+
+.currency select {
+  background-color: #1d2021;
+  background-image: url("icons/caret-down.png");
+  background-repeat: no-repeat;
+  background-position: right 3px center;
+  background-size: 15% auto; 
+  height: 125%;
+  width: 30%; 
+  outline: none;
+  border: 1px solid #3b3d3f;
+  margin-left: -7px;
+  padding-left: 8px;
+  color: #bebebe;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.currency select option{
+  background-color: #1d2021;
+  color: #bebebe;
+}
+
+.currency select option:hover{
+  background-color: #476e95;
+}
+
+
+#weather-info {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  transform: translate(-50%, -50%);
+  font-family: var(--text-font);
+  color: #ffffff;
+  text-align: center;
+  width: 100%;
   font-size: 28px;
   top: 75%;
   left: 50%;
@@ -263,4 +355,39 @@ a:visited {
 
 a:hover {
   color: #8ad1cf ;
+}
+
+.color-picker {
+  display: flex;
+  position: absolute;
+  justify-content: space-between;
+  align-items: center;
+  transform: translate(-50%, -50%);
+  font-family: var(--clock-font);
+  color: #bebebe;
+  text-align: center;
+  letter-spacing: 1px;
+  width: 55%;
+  font-size: 12px;
+  top: 80%;
+  left: 50%;
+}
+
+.color-values {
+  margin-right: 10px;
+}
+
+#color-input{
+  border: 1px solid #bebebe;
+  outline: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 2%;
+}
+
+input[type="color"] {
+  appearance: none;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
 }

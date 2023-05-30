@@ -19,13 +19,30 @@
       
         <div class="content-container">
 
+          <div class="content" id="content4">
+            <div id="curr-conv-info">Currency Converter</div>
+            <div class="currency">
+              <div id="curr1"><input id="amount1"></input><select id="currency1"></select></div>
+              <div id="curr2"><input id="amount2" disabled></input><select id="currency2"></select></div>
+            </div>
+            <div id="rate-conv-info">exchange rate =&nbsp<span id="rate"></span></div>
+
+            <div id="col-conv-info">Color Picker</div>
+            <div class="color-picker">
+              <input type="color" id="color-input" value="#000000">
+              <div class="color-values">
+                <span id="rgb-value"></span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span id="hex-value"></span>
+              </div>
+              
+            </div>
+          </div>
+
           <div class="content" id="content5">
             <div id="weather-icon"></div>
             <div id="weather-info"></div>
           </div>
 
-          <div class="content" id="content6">
-            <input id="notes-input" placeholder="create note"></input>
+          <div class="content" id="content6"><input id="notes-input" placeholder="create note"></input>
             <div class="note-buttons">
               <button id="button-br" class="tab" onclick="add_note()">add</button>
               <button id="button-br" class="tab" onclick="clear_notes()">clear</button>
@@ -42,5 +59,7 @@
     <script src='scripts/time.js'></script>
     <script src='scripts/notes.js'></script>
     <script src='scripts/temp.js'></script>
+    <script src='scripts/curr.js'></script>
+    <script src='scripts/color.js'></script>
   </body>
 </html>
