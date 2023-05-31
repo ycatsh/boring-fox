@@ -4,8 +4,8 @@
     --color-link: #c9c9c9;
     --color-link-visited: #c9c9c9;
     --color-link-hover: #8ad1cf ;
-    --clock-font: "minecraftia";
-    --text-font: "Five Fonts at Freddy's";
+    --clock-font: "Minecraftia";
+    --text-font: "Coder's Crux";
 }
 
 html{
@@ -56,7 +56,7 @@ body {
   top: 42%;
   left: 50%;
   color: #3b3d3f;
-  font-size: 14px;
+  font-size: 24px;
 }
 
 .container {
@@ -96,7 +96,7 @@ li {
   display: flex;
   list-style-type: none;
   font-family: var(--text-font);
-  font-size: 11px;
+  font-size: 22px;
   padding: 2px;
   list-style-type: none;
 }
