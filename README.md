@@ -6,9 +6,9 @@ Smart-Fox is primarily developed with [JavaScript](https://en.wikipedia.org/wiki
 <br>
 <div align="center">
     
-![stars](https://img.shields.io/github/stars/ycatsh/firefox-themes?&color=3b3d3f&labelColor=1d1e1f&style=for-the-badge)
-![issues-closed](https://img.shields.io/github/issues-closed/ycatsh/firefox-themes?color=3b3d3f&labelColor=1d1e1f&style=for-the-badge)
-![issues-open](https://img.shields.io/github/issues/ycatsh/firefox-themes?color=3b3d3f&labelColor=1d1e1f&style=for-the-badge)
+![stars](https://img.shields.io/github/stars/ycatsh/smart-fox?&color=3b3d3f&labelColor=1d1e1f&style=for-the-badge)
+![issues-closed](https://img.shields.io/github/issues-closed/ycatsh/smart-fox?color=3b3d3f&labelColor=1d1e1f&style=for-the-badge)
+![issues-open](https://img.shields.io/github/issues/ycatsh/smart-fox?color=3b3d3f&labelColor=1d1e1f&style=for-the-badge)
     
 </div>
 
