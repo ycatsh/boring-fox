@@ -93,6 +93,13 @@ These instructions provide a step-by-step guide for downloading and applying the
 4. Restart Firefox. 
 
 <br>
+
+## Fonts
+
+To incorporate the required fonts into the theme, download [Minecraftia](https://www.dafont.com/minecraftia.font) and [Coder's Crux](https://www.dafont.com/coders-crux.font). Alternatively, you can choose any font by modifying the variables located at the top of the `style.css` file.
+
+
+<br>
 <br>
 
 ## Other Themes 
