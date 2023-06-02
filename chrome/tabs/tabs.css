@@ -1,10 +1,10 @@
-:root #tabbrowser-tabs{
+:root {
 	--tab-toolbar-navbar-overlap: 0px !important; 
-	--tab-min-height: 35px !important;
-}
+	--tab-min-height: 40px !important;
+  }
 
 .tab-close-button{ 
-	margin-top: 3px !important;
+	margin-top: -1px !important;
 }
 
 :root .tabbrowser-tab:not([pinned]) {
@@ -12,7 +12,7 @@
 }
 
 #tabs-newtab-button{
-	margin-bottom: -2px !important;
+	margin-bottom: 3px !important;
 }
 
 #TabsToolbar {
@@ -23,6 +23,7 @@
     border-right: 1.5px solid rgb(111, 119, 122, 0.3) !important;
 }
 
+
 :root .tabbrowser-tab:not([selected=true]):not([multiselected=true]) .tab-background {
 	border-radius: 0 !important;
 }
@@ -32,7 +33,6 @@
 	overflow: visible !important;
 	font-size: 13px !important;
 	background: 0 !important;
-	border: none !important;
 }
 
 .tabbrowser-tab:not([last-visible-tab]){
@@ -48,18 +48,16 @@
 }
 
 .tab-background{
-	border-radius: 0px 0px 0 0 !important;
 	position: relative !important;
-	border: none !important;
 	visibility: visible !important;
 }
 
 .tab-icon-image{
-	margin-bottom: 2px !important;
+	margin-bottom: 4px !important;
 }
 
 .tab-label-container{
-	margin-top: 1.5px !important;
+	margin-bottom: 11px !important;
 	opacity: 1 !important;
 }
 

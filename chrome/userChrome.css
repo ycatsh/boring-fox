@@ -1,25 +1,20 @@
 @import url("tabs/tabs.css");
 
-#navigator-toolbox::after {
-  border-bottom: 0px !important;
-}  
-
 :root .tabbrowser-tab[fadein]{ 
   max-width: 100vw !important 
 }
+
+#navigator-toolbox::after {
+  border-bottom: 0px !important;
+}  
 
 .tabbrowser-tab {
   padding-left: 0 !important;
   padding-right: 0 !important;
 }
 
-:root {
-  --tab-toolbar-navbar-overlap: 0px !important; 
-  --tab-min-height: 39px !important;
-}
-
 #TabsToolbar {
-  margin-top:0px !important;
+  margin-top: -3px !important;
   margin-bottom: -5px !important
 }
 
