@@ -1,5 +1,13 @@
 @import url("tabs/tabs.css");
 
+
+.tab-background,#urlbar-background, #searchbar, menupopup, .menupopup-arrowscrollbox{ 
+  border-radius: 0 !important; 
+}
+
+:root {--arrowpanel-border-radius:0px !important;
+}
+
 :root .tabbrowser-tab[fadein]{ 
   max-width: 100vw !important 
 }
