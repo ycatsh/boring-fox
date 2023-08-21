@@ -1,29 +1,33 @@
 window.addEventListener('load', () => {
+    const weather_city = document.getElementById('weather-city');
     const weather_info = document.getElementById('weather-info');
+    const weather_temp = document.getElementById('weather-temp');
     const weather_icon = document.getElementById('weather-icon');
+    const weather_error = document.getElementById('weather-error');
     const api_key = 'KEY'; //Example (put your API key here)
+    const country = 'UK' //Example (change this to your country)
     const location = 'London'; //Example (change this to your city)
 
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${api_key}`;
 
   fetch(url)
-      .then(response => response.json())
-      .then(data => {
-        if (data.cod !== 200) {
-            throw new Error(data.message);
-        }
-      
-      const weather = data.weather[0].description;
-      const temperature = Math.round(data.main.temp - 273.15);
-      const weather_code = data.weather[0].icon;
+        .then(response => response.json())
+        .then(data => {
+            if (data.cod !== 200) {
+                throw new Error(data.message);
+            }
+            const weather = data.weather[0].description;
+            const temperature = Math.round(data.main.temp - 273.15);
+            const weather_code = data.weather[0].icon;
 
-      weather_info.innerHTML = `${weather}, feels like ${temperature}°C`;
-      weather_icon.innerHTML = `<i class="fas ${get_icon(weather_code)}"></i>`;
-
-    })
-    .catch(error => {
-        weather_info.innerHTML = 'An error occurred while fetching the weather data.';
-        console.log(error);
+            weather_info.innerHTML = `${weather}`;
+            weather_temp.innerHTML = `<span style="color: #6d7072;">Feels like </span>${temperature}°C`;
+            weather_icon.innerHTML = `<i class="fas ${get_icon(weather_code)}"></i>`;
+            weather_city.innerHTML = location + ', ' + country
+        })
+        .catch(error => {
+            weather_error.innerHTML = 'An error occurred while fetching the weather data.';
+            console.log(error);
     });
 });
 
