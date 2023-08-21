@@ -1,61 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-
-  <head>
+<head>
     <meta charset="UTF-8">
     <title>startpage</title>
     <link rel="icon" type="image/x-icon" href="icons/favicon.png">
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="https://kit.fontawesome.com/40ec461a10.js" crossorigin="anonymous"></script>
-  </head>
+</head>
 
-  <body onload="real_time_clock()">
-
+<body onload="real_time_clock()">
     <div class="container">
-      <div class="box">
-
-        <div class="tabs" id="right"></div>
         <div class="tabs" id="left"></div>
-      
-        <div class="content-container">
 
-          <div class="content" id="content4">
+        <div class="content" id="content5">
+            <h1><pre class="ascii" id="ascii-placeholder-4"></h1></pre>
             <div id="curr-conv-info">Currency Converter</div>
             <div class="currency">
               <div id="curr1"><input id="amount1"></input><select id="currency1"></select></div>
               <div id="curr2"><input id="amount2" disabled></input><select id="currency2"></select></div>
             </div>
-            <div id="rate-conv-info">exchange rate =&nbsp<span id="rate"></span></div>
+            <div id="rate-conv-info">Exchange Rate =<span id="rate"></span></div>
+          </div>
 
-            <div id="col-conv-info">Color Picker</div>
-            <div class="color-picker">
-              <input type="color" id="color-input" value="#000000"><div id="rgb-value"></div><div id="hex-value"></div>
+          <div class="content" id="content3">
+            <h1><pre id="ascii-placeholder-2"></pre></h1>
+            <div class="weather">
+                <div style="color: #6d7072;" id="weather-city"></div>
+                <div id="weather-wrapper">
+                    <div style="color: #6d7072;" id="weather-icon"></div>
+                    <div style="font-style: italic; color: #b1b1b1;" id="weather-info"></div>
+                </div>
+                <div style="color: #b1b1b1;" id="weather-temp"></div>
+                <div style="color: #b1b1b1;" id="weather-error"></div>
             </div>
           </div>
 
-          <div class="content" id="content5">
-            <div id="weather-icon"></div>
-            <div id="weather-info"></div>
-          </div>
-
-          <div class="content" id="content6"><input id="notes-input" placeholder="create note"></input>
+          <div class="content" id="content4"><input id="notes-input" placeholder="Create Note"></input>
+            <h1><pre class="ascii" id="ascii-placeholder-3"></h1></pre>
+            <h1 id="time-line">these are not going anywhere</h1>
             <div class="note-buttons">
-              <button id="button-br" class="tab" onclick="add_note()">add</button>
-              <button id="button-br" class="tab" onclick="clear_notes()">clear</button>
+              <button id="button-br" class="tab" onclick="add_note()">ADD</button>
+              <button id="button-br2" class="tab" onclick="clear_notes()">CLEAR</button>
             </div>
             <div class="notes-list" id="notes-list"></div>
-          </div>
-
         </div>
-
-      </div>
     </div>
-
     <script src='scripts/tabs.js'></script> 
     <script src='scripts/time.js'></script>
     <script src='scripts/notes.js'></script>
     <script src='scripts/temp.js'></script>
     <script src='scripts/curr.js'></script>
-    <script src='scripts/color.js'></script>
-  </body>
+    <script src='scripts/ascii.js'></script>
+</body>
 </html>
