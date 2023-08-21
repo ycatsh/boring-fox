@@ -17,31 +17,32 @@ Smart-Fox offers a window with tabs-like buttons to organise its functionality. 
 
 <br>
 
+### Tab based bookmarks
+![1](https://github.com/ycatsh/smart-fox/assets/91330011/30429133-6bb3-4734-b4e6-1ae1274cc4bb)
+<br>
+Experience a visually stunning browsing interface with the theme's minimalist design and functional yet elegant features.
+
+<br>
+
 ### Daily Note
-![daily-note-img](https://github.com/ycatsh/smart-fox/assets/91330011/ea1bdc95-0610-4ace-8346-61da62f731af)
+![2](https://github.com/ycatsh/smart-fox/assets/91330011/9337426b-3144-44da-a1be-ec9dd33bac55)
 <br>
 Stay productive with the integrated daily note feature. Create and manage your tasks right from your start page.
 
 <br>
 
 ### Weather Information 
-![weather-img](https://github.com/ycatsh/smart-fox/assets/91330011/ea79e926-826a-4cc7-886b-c37ccb13270e)
+![3](https://github.com/ycatsh/smart-fox/assets/91330011/4e98d673-1f33-4d5d-b20c-426116ae58c3)
 <br>
 Check the weather right on your Firefox homepage for convenient access to up-to-date information. To set this up make an account with [openweathermap](https://openweathermap.org/) and use your API key in `temp.js`.
 
 <br>
 
 ### Useful Tools 
-![conv-img](https://github.com/ycatsh/smart-fox/assets/91330011/2d13794d-0a99-424f-992b-21cd3f8289c2)
+![4](https://github.com/ycatsh/smart-fox/assets/91330011/ac75ab68-a842-4ce3-baf2-0286e4178713)
 <br>
-Convert currencies and use a color picker whenever you want. To set conversion up make an account with [exchangerate-api](https://app.exchangerate-api.com/) and use your API key in `conv/curr.js`.
+Convert currencies whenever you want. To set conversion up make an account with [exchangerate-api](https://app.exchangerate-api.com/) and use your API key in `conv/curr.js`.
 
-<br>
-
-### Eye Candy Design 
-![design-img](https://github.com/ycatsh/smart-fox/assets/91330011/313c79f4-edc3-4cc5-8ca7-8fc57e52697a)
-<br>
-Experience a visually stunning browsing interface with the theme's minimalist design and functional yet elegant features.
 
 <br>
 <br>
