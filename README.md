@@ -34,14 +34,14 @@ Stay productive with the integrated daily note feature. Create and manage your t
 ### Weather Information 
 ![3](https://github.com/ycatsh/smart-fox/assets/91330011/4e98d673-1f33-4d5d-b20c-426116ae58c3)
 <br>
-Check the weather right on your Firefox homepage for convenient access to up-to-date information. To set this up make an account with [openweathermap](https://openweathermap.org/) and use your API key in `temp.js`.
+Check the weather right on your Firefox homepage for convenient access to up-to-date information. To set this up make an account with [openweathermap](https://openweathermap.org/) and use your API key in the `scripts/temp.js` file.
 
 <br>
 
 ### Useful Tools 
 ![4](https://github.com/ycatsh/smart-fox/assets/91330011/ac75ab68-a842-4ce3-baf2-0286e4178713)
 <br>
-Convert currencies whenever you want. To set conversion up make an account with [exchangerate-api](https://app.exchangerate-api.com/) and use your API key in `conv/curr.js`.
+Convert currencies whenever you want. To set conversion up make an account with [exchangerate-api](https://app.exchangerate-api.com/) and use your API key in the `scripts/curr.js` file.
 
 
 <br>
