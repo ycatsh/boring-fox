@@ -99,6 +99,22 @@ These instructions provide a step-by-step guide for downloading and applying the
 
 To incorporate the required fonts into the theme, download [Minecraftia](https://www.dafont.com/minecraftia.font) and [Coder's Crux](https://www.dafont.com/coders-crux.font). Alternatively, you can choose any font by modifying the variables located at the top of the `style.css` file.
 
+<br>
+
+## ASCII Art
+
+All ASCII art, except for the graph found on the currency converter tab, is not created by me. Please find the sources for them below:  
+
+- **Retro Car**  
+  Source: [asciiart.website](https://asciiart.website/index.php?art=transportation/cars) (#5 on the page)
+
+- **Cat on Moon**  
+  Source: [textArt.sh](https://textart.sh/topic/moon) (#16 on the page)
+
+- **Book and Ink**  
+  Source: [ascii.co.uk](https://ascii.co.uk/art/books) (#3 on the page)
+
+
 
 <br>
 <br>
