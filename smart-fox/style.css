@@ -1,8 +1,13 @@
+/* ==========================================
+    RESET & BASE STYLES
+========================================== */
+
+/* Colors and variables */
 :root {
-    --background-color: #1d2021;
+    --background-color: #202020;
     --text-color: #ffffff;
-    --primary-color: #303233;
-    --secondary-color: #494b4c;
+    --primary-color: #2b2b2b;
+    --secondary-color: #363636;
     --font-primary: "Minecraftia", sans-serif;
     --font-secondary: "MS Sans Serif", sans-serif;
     --font-ascii: monospace;
@@ -15,11 +20,13 @@
     --border-color: #696a6a;
 }
 
+/* Reset */
 body, h1, p, ul, li {
     margin: 0;
     padding: 0;
 }
 
+/* Base */
 body {
     background-color: var(--background-color);
     color: var(--text-color);
@@ -31,6 +38,14 @@ body {
     overflow: hidden;
 }
 
+
+
+
+/* ==========================================
+    MAIN LAYOUT STYLING
+========================================== */
+
+/* Main Box */
 .container {
     position: relative;
     width: 750px;
@@ -40,13 +55,6 @@ body {
     box-shadow: 0 0 10px var(--shadow);
 }
 
-.blur {
-    width: 750px;
-    height: 400px;
-    padding: 20px;
-    background-color: var(--primary-color);
-    box-shadow: 0 0 10px var(--shadow);
-}
 
 .tab {
     border: none;
@@ -58,7 +66,7 @@ body {
     font-size: 12px;
 }
 
-#left {
+#tab-group {
     top: 0; 
     left: 0; 
     display: flex;
@@ -70,15 +78,7 @@ body {
     background-color: var(--secondary-color);
 }
 
-.ascii {
-    font-family: var(--font-ascii);
-    font-size: var(--font-size-ascii);
-    margin-top: -22px;
-	margin-left: -60px;
-    text-align: center;
-    font-weight: lighter;
-    color: #c9c9c9;
-}
+
 
 h1 {
     font-size: var(--font-size-small);
@@ -93,9 +93,30 @@ h1 {
     word-spacing: 5px;
 }
 
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+
+
+/* ==========================================
+    BOOKMARKS STYLING
+========================================== */
+
+
 .bookmark-list {
     list-style-type: none;
     padding-left: 0;
+}
+
+.sub-list {
+    margin-left: 0px;
+    list-style-type: none;
+    width: 200px;
 }
 
 .folder {
@@ -108,12 +129,6 @@ h1 {
     color: #c9c9c9;
     border-bottom: 1px solid var(--border-color);
     line-height: 1.1;
-}
-
-.sub-list {
-    margin-left: 0px;
-    list-style-type: none;
-    width: 200px;
 }
 
 a {
@@ -140,7 +155,14 @@ a:hover {
     width: 50%;
 }
 
-.note-buttons{
+
+
+
+/* ==========================================
+    NOTES STYLING
+========================================== */
+
+.note-buttons {
     bottom: 0; 
     right: 0; 
     display: flex;
@@ -148,7 +170,11 @@ a:hover {
     position: absolute; 
 }
 
-#button-br, #button-br2{
+#notes-button {
+    border-right: 2px solid;
+}
+
+#add-button, #clear-button {
     font-size: 10px;
     width: 60px;
     font-family: var(--font-primary);
@@ -158,19 +184,15 @@ a:hover {
     padding-top: 3px;
 }
 
-#button-br {
+#add-button {
     border-right: none;
 }
 
-#notes-button{
-    border-right: 2px solid;
-}
-
-#button-br:hover, #button-br2:hover{
+#add-button:hover, #clear-button:hover {
     background-color: var(--primary-color);
 }
 
-#notes-input{
+#notes-input {
     bottom: 0; 
     left: 0; 
     width: 90%;
@@ -185,7 +207,6 @@ a:hover {
     font-size: 12px;
     outline: none;
 }
-
 
 #notes-list {
     font-family: var(--font-secondary);
@@ -226,69 +247,62 @@ a:hover {
     margin-top: 5px;
 }
 
-#curr-conv-info{
-	margin-top: 0%;
-	font-family: var(--font-primary);
-	font-size: var(--font-size-small);
-	letter-spacing: 1px;
-	word-spacing: 5px;
+
+
+
+/* ==========================================
+    CURRENCY CONVERSION STYLING
+========================================== */
+
+#curr-conv-info {
+    margin-top: 0%;
+    font-family: var(--font-primary);
+    font-size: var(--font-size-small);
+    letter-spacing: 1px;
+    word-spacing: 5px;
 }
 
-#rate-conv-info{
-	margin-top: 10px;
-	font-family: var(--font-secondary);
-	font-size: var(--font-size-small);
-	letter-spacing: 1px;
+#rate-conv-info {
+    margin-top: 10px;
+    font-family: var(--font-secondary);
+    font-size: var(--font-size-small);
+    letter-spacing: 1px;
 }
 
-.currency input{
-	background-color: var(--secondary-color);
-	height: 25px;
-	color: var(--text-color);
+.currency input {
+    background-color: var(--secondary-color);
+    height: 25px;
+    color: var(--text-color);
     border: none;
 }
 
-.currency input:focus{
-	outline: none;
+.currency input:focus {
+    outline: none;
 }
 
-.currency select{
-	background-color: var(--secondary-color);
+.currency select {
+    background-color: var(--secondary-color);
     border: 2px solid var(--secondary-color);
-	height: 27px;
-	outline: none;
-	border: none;
-	color: #bebebe;
+    height: 27px;
+    outline: none;
+    border: none;
+    color: #bebebe;
 }
 
-.content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
 
-#ascii-placeholder-2{
-    font-size: 6px;
-    margin-left: 65%;
-    margin-top: 13%;
-}
 
-#ascii-placeholder-3{
-    margin-right: 25%;
-}
 
-#ascii-placeholder-4{
-    margin-top: 1%;
-}
+/* ==========================================
+    WEATHER WIDGET STYLES
+========================================== */
 
 .weather {
-	font-family: var(--font-secondary);
-	font-size: 24px;
+    font-family: var(--font-secondary);
+    font-size: 24px;
     display: flex;
     flex-direction: column;
-	margin-top: -23%;
-	margin-left: 15%;
+    margin-top: -23%;
+    margin-left: 15%;
     align-items: left;
 }
 
@@ -301,9 +315,40 @@ a:hover {
     margin: 15px 10px;
 }
 
-#weather-error{
+#weather-error {
     line-height: 1.3em;
     width: 50%;
     margin-top: -2%;
     margin-left: -5%;
+}
+
+
+
+
+/* ==========================================
+    ASCII ART 
+========================================== */
+
+.ascii {
+    font-family: var(--font-ascii);
+    font-size: var(--font-size-ascii);
+    margin-top: -22px;
+    margin-left: -60px;
+    text-align: center;
+    font-weight: lighter;
+    color: #c9c9c9;
+}
+
+#ascii-placeholder-2 {
+    font-size: 6px;
+    margin-left: 65%;
+    margin-top: 13%;
+}
+
+#ascii-placeholder-3 {
+    margin-right: 25%;
+}
+
+#ascii-placeholder-4 {
+    margin-top: 1%;
 }

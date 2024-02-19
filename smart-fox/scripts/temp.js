@@ -1,12 +1,14 @@
+import config from "../config.js";
+
 window.addEventListener('load', () => {
     const weather_city = document.getElementById('weather-city');
     const weather_info = document.getElementById('weather-info');
     const weather_temp = document.getElementById('weather-temp');
     const weather_icon = document.getElementById('weather-icon');
     const weather_error = document.getElementById('weather-error');
-    const api_key = 'KEY'; //Example (put your API key here)
-    const country = 'UK' //Example (change this to your country)
-    const location = 'London'; //Example (change this to your city)
+    const api_key = config.weather_api_key;
+    const country = config.your_country;
+    const location = config.your_location;
 
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${api_key}`;
 

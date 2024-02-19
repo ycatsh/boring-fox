@@ -1,12 +1,12 @@
+import config from "../config.js";
+
 const amt_element = document.getElementById('amount1');
 const curr_element = document.getElementById('currency1');
-
 const conv_amt_element = document.getElementById('amount2');
 const conv_curr_element = document.getElementById('currency2');
-
 const rate_element = document.getElementById('rate');
 
-const api_key = "KEY"; //Example (put your API key here)
+const api_key = config.curr_api_key;
 
 amt_element.addEventListener('input', convert_currency);
 curr_element.addEventListener('change', convert_currency);
@@ -16,7 +16,6 @@ conv_curr_element.addEventListener('change', convert_currency);
 function add_currencies(select_element, options, default_value) {
     options.forEach(option => {
         const optionElement = document.createElement('option');
-        console.log(option)
         optionElement.value = option;
         optionElement.text = option;
 
@@ -28,14 +27,12 @@ function add_currencies(select_element, options, default_value) {
     });
 }
 
-
 async function update_currencies() {
     const currencies = ["USD", "INR", "EUR", "GBP", "JPY"];
 
     add_currencies(curr_element, currencies, "USD");
     add_currencies(conv_curr_element, currencies, "JPY");
 }
-
 
 async function convert_currency() {
     const amt = parseFloat(amt_element.value);

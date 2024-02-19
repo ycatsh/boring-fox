@@ -2,27 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>startpage</title>
-    <link rel="icon" type="image/x-icon" href="icons/favicon.png">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.png">
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="https://kit.fontawesome.com/40ec461a10.js" crossorigin="anonymous"></script>
+    <title>startpage</title>
 </head>
 
 <body onload="real_time_clock()">
     <div class="container">
-        <div class="tabs" id="left"></div>
-
-        <div class="content" id="content5">
-            <h1><pre class="ascii" id="ascii-placeholder-4"></h1></pre>
-            <div id="curr-conv-info">Currency Converter</div>
-            <div class="currency">
-              <div id="curr1"><input id="amount1"></input><select id="currency1"></select></div>
-              <div id="curr2"><input id="amount2" disabled></input><select id="currency2"></select></div>
-            </div>
-            <div id="rate-conv-info">Exchange Rate =<span id="rate"></span></div>
-          </div>
-
-          <div class="content" id="content3">
+        <div class="tabs" id="tab-group"></div>
+        
+        <div class="content" id="content3">
             <h1><pre id="ascii-placeholder-2"></pre></h1>
             <div class="weather">
                 <div style="color: #6d7072;" id="weather-city"></div>
@@ -33,23 +23,35 @@
                 <div style="color: #b1b1b1;" id="weather-temp"></div>
                 <div style="color: #b1b1b1;" id="weather-error"></div>
             </div>
-          </div>
-
-          <div class="content" id="content4"><input id="notes-input" placeholder="Create Note"></input>
-            <h1><pre class="ascii" id="ascii-placeholder-3"></h1></pre>
+        </div>
+        
+        <div class="content" id="content4">
+            <input id="notes-input" placeholder="Create Note">
+            <h1><pre class="ascii" id="ascii-placeholder-3"></pre></h1>
             <h1 id="time-line">these are not going anywhere</h1>
             <div class="note-buttons">
-              <button id="button-br" class="tab" onclick="add_note()">ADD</button>
-              <button id="button-br2" class="tab" onclick="clear_notes()">CLEAR</button>
+                <button id="add-button" class="tab" onclick="add_note()">ADD</button>
+                <button id="clear-button" class="tab" onclick="clear_notes()">CLEAR</button>
             </div>
             <div class="notes-list" id="notes-list"></div>
         </div>
+
+        <div class="content" id="content5">
+            <h1><pre class="ascii" id="ascii-placeholder-4"></pre></h1>
+            <div id="curr-conv-info">Currency Converter</div>
+            <div class="currency">
+                <div id="curr1"><input id="amount1"></input><select id="currency1"></select></div>
+                <div id="curr2"><input id="amount2" disabled></input><select id="currency2"></select></div>
+            </div>
+            <div id="rate-conv-info">Exchange Rate =<span id="rate"></span></div>
+        </div>
     </div>
-    <script src='scripts/tabs.js'></script> 
+
+    <script src='scripts/tabs.js' type="module"></script> 
     <script src='scripts/time.js'></script>
     <script src='scripts/notes.js'></script>
-    <script src='scripts/temp.js'></script>
-    <script src='scripts/curr.js'></script>
+    <script src='scripts/temp.js' type="module"></script>
+    <script src='scripts/curr.js' type="module"></script>
     <script src='scripts/ascii.js'></script>
 </body>
 </html>
