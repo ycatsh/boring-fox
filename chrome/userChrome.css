@@ -1,118 +1,201 @@
-@import url("tabs/tabs.css");
+/* ==========================================
+    ROOT STYLES
+========================================== */
 
-
-.tab-background,#urlbar-background, #searchbar, menupopup, .menupopup-arrowscrollbox{ 
-  border-radius: 0 !important; 
+:root {
+    --tab-toolbar-navbar-overlap: 0px !important; 
+    --arrowpanel-border-radius: 0px !important;
+    --tab-min-height: 40px !important;
 }
 
-:root {--arrowpanel-border-radius:0px !important;
+:root .tabbrowser-tab:not([pinned]) {
+    min-width: 100px !important;
 }
 
-:root .tabbrowser-tab[fadein]{ 
-  max-width: 100vw !important 
+:root .tabbrowser-tab[fadein] {
+    max-width: 100vw !important;
 }
 
-#navigator-toolbox::after {
-  border-bottom: 0px !important;
-}  
-
-.tabbrowser-tab {
-  padding-left: 0 !important;
-  padding-right: 0 !important;
+/* Tab Seperators */
+:root .tabbrowser-tab:not([selected=true]):not([multiselected=true]):not([beforeselected-visible="true"]) .tab-background {
+    border-right: 1.5px solid rgb(111, 119, 122, 0.3) !important;
 }
 
-#TabsToolbar {
-  margin-top: -3px !important;
-  margin-bottom: -5px !important
+:root .tabbrowser-tab:not([selected=true]):not([multiselected=true]) .tab-background {
+    border-radius: 0 !important;
 }
+
+
+
+
+/* ==========================================
+    HIDING ELEMENTS
+========================================== */
+
+#webrtcIndicator,
+.hidevscroll-scrollbar,
+#sidebar-search-container,
+#alltabs-button,
+#urlbar-go-button,
+#identity-permission-box,
+#tracking-protection-icon-container,
+#pageActionButton,
+#page-action-buttons,
+#reader-mode-button {
+    display: none !important;
+}
+
+/* Buttons and icons */
+#urlbar-zoom-button,
+#PanelUI-button,
+#PanelUI-menu-button,
+#PanelUI-menu-button .toolbarbutton-icon,
+#PanelUI-menu-button .toolbarbutton-badge-stack {
+    display: none !important;
+}
+
+
+
+
+/* ==========================================
+    TABS STYLING
+========================================== */
 
 .tab-background[selected]{
-  background: #1f2223 !important;
-  box-shadow: none !important;
+    background: #202020 !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
 }
 
 .tab-background{
-  box-shadow: none !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
 }
 
-#titlebar{
-  -moz-box-ordinal-group: 2;
-  --tabs-navbar-shadow-size: 0px;
-  --uc-menubar-vertical-overlap: 19px; 
+.tab-text,
+.tab-label {
+    -moz-box-flex: 1 !important;
+    text-align: left !important;
+    font-size: 12px !important;
 }
 
-#navigator-toolbox > div{ 
-  display: contents 
+.tab-secondary-label {
+    display: none !important;
 }
 
-.global-notificationbox, #tab-notification-deck{ 
-  -moz-box-ordinal-group: 2 
+
+#TabsToolbar {
+    height: var(--tab-min-height) !important;
 }
 
-#TabsToolbar .titlebar-spacer{ 
-  display: none; 
+.tabbrowser-tab {
+    min-height: var(--tab-min-height) !important;
+    overflow: visible !important;
+    font-size: 12px !important;
+    background: 0 !important;
 }
 
-#navigator-toolbox::after{ 
-  display: none !important; 
+.tabbrowser-tab:not([last-visible-tab]) {
+    margin-inline-end: -0.5px !important;
 }
 
-@media (-moz-gtk-csd-close-button){ .titlebar-button{ 
-  -moz-box-orient: vertical 
-} }
-
-:root:not([chromehidden~="menubar"], [sizemode="fullscreen"]) #toolbar-menubar:not([autohide="true"]) {
-  display: block !important;
+.tabbrowser-tab::before, .tabbrowser-tab::after, .tab-line {
+    display: none !important;
 }
 
-#toolbar-menubar:not([autohide="true"]) > .titlebar-buttonbox-container {
-  visibility: hidden;
+.tab-background{
+    position: relative !important;
+    visibility: visible !important;
 }
 
-.titlebar-buttonbox-container{display: none !important}
 
-#alltabs-button {display: none !important;}
 
-#urlbar, .searchbar-textbox {
-  font-size: 13px !important;
-  font-family: "Fira Code";
-  font-weight: lighter;
+
+/* ==========================================
+    URL AND SEARCH BAR
+========================================== */
+
+#urlbar,
+.searchbar-textbox {
+    font-size: 13px !important;
+    font-family: "Fira Code";
+    font-weight: lighter;
 }
 
 #urlbar {
-  text-align: left;
-  padding-right: 38px
+    text-align: left;
+    padding-right: 38px;
 }
 
-.tab-text, .tab-label {
-  -moz-box-flex: 1 !important;
-  text-align: left !important;
-  padding-top: 6px !important;
-  font-size: 12px  !important;
+
+
+
+/* ==========================================
+    TOOLBAR AND MENU
+========================================== */
+
+#TabsToolbar {
+    margin-top: -3px !important;
+    margin-bottom: -5px !important;
 }
 
-#urlbar-zoom-button { display: none !important; }
-
-#PanelUI-button { margin-top: -5px; margin-bottom: 44px; }
-
-#PanelUI-menu-button {
-   padding: 0px !important;
-   max-height: 1px;
-   list-style-image: none !important;
+#titlebar {
+    -moz-box-ordinal-group: 2;
+    --tabs-navbar-shadow-size: 0px;
+    --uc-menubar-vertical-overlap: 19px;
 }
 
-#PanelUI-menu-button .toolbarbutton-icon { width: 1px !important; }
-#PanelUI-menu-button .toolbarbutton-badge-stack { padding: 0px !important; }
+#navigator-toolbox > div {
+    display: contents;
+}
 
-#pageActionButton { display: none !important; }
-#page-action-buttons { display: none !important; }
+.global-notificationbox,
+#tab-notification-deck {
+    -moz-box-ordinal-group: 2;
+}
 
-#reader-mode-button{ display: none !important; }
+#TabsToolbar .titlebar-spacer {
+    display: none;
+}
 
-.tab-secondary-label { display: none !important; }
+#navigator-toolbox::after {
+    border-bottom: 0px !important;
+    display: none !important;
+}
 
-#urlbar-go-button { display: none !important; }
 
-#identity-permission-box { display: none !important; } 
 
-#tracking-protection-icon-container { display: none !important; }
+
+/* ==========================================
+    FULLSCREEN STYLING AND MENUBAR
+========================================== */
+
+:root:not([chromehidden~="menubar"], [sizemode="fullscreen"]) #toolbar-menubar:not([autohide="true"]) {
+    display: block !important;
+}
+
+#toolbar-menubar:not([autohide="true"]) > .titlebar-buttonbox-container {
+    visibility: hidden;
+}
+
+.titlebar-buttonbox-container {
+    display: none !important;
+}
+
+
+
+
+/* ==========================================
+    MISCELLANEOUS STYLES
+========================================== */
+
+.tabbrowser-tab {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+@media (-moz-gtk-csd-close-button) {
+    .titlebar-button {
+        -moz-box-orient: vertical;
+    }
+}
