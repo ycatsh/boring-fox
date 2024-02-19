@@ -1,51 +1,63 @@
-![graphic](https://github.com/ycatsh/smart-fox/assets/91330011/8872af68-711f-480b-9b7e-2304402c0c42)
+![graphic](https://github.com/ycatsh/Smart-Fox/assets/91330011/8872af68-711f-480b-9b7e-2304402c0c42)
 <br>
 
-Smart-Fox is primarily developed with [JavaScript](https://en.wikipedia.org/wiki/JavaScript) and [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS). It offers a sophisticated and intuitive browsing experience for users seeking efficiency and convenience. With its minimal design and relevant features, Smart-Fox combines aesthetics with functionality seamlessly. The Smart-Fox theme enhances your Firefox homepage by providing easy access to music control (under development), bookmarks, daily notes, and weather widgets within a single, cohesive interface.
+Boring-Fox is primarily developed with [JavaScript](https://en.wikipedia.org/wiki/JavaScript) and [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS). It offers a sophisticated and intuitive browsing experience for users seeking efficiency and convenience, and who are just a tad bit boring. With its minimal and retro design, Boring-Fox combines boring aesthetics with functionality seamlessly. The theme enhances your Firefox homepage by providing easy access to bookmarks, daily notes, and weather widgets within a single, cohesive interface.
 <br>
 <br>
 <div align="center">
     
-![stars](https://img.shields.io/github/stars/ycatsh/smart-fox?&color=3b3d3f&labelColor=1d1e1f&style=for-the-badge)
-![issues-closed](https://img.shields.io/github/issues-closed/ycatsh/smart-fox?color=3b3d3f&labelColor=1d1e1f&style=for-the-badge)
-![issues-open](https://img.shields.io/github/issues/ycatsh/smart-fox?color=3b3d3f&labelColor=1d1e1f&style=for-the-badge)
+![stars](https://img.shields.io/github/stars/ycatsh/Smart-Fox?&color=3b3d3f&labelColor=1d1e1f&style=for-the-badge)
+![issues-closed](https://img.shields.io/github/issues-closed/ycatsh/Smart-Fox?color=3b3d3f&labelColor=1d1e1f&style=for-the-badge)
+![issues-open](https://img.shields.io/github/issues/ycatsh/Smart-Fox?color=3b3d3f&labelColor=1d1e1f&style=for-the-badge)
     
 </div>
 
 ## Features
-Smart-Fox offers a window with tabs-like buttons to organise its functionality. It has a range of helpful features designed to elevate your browsing experience. They are not cluttered and all over the place; rather, they're thoughtfully placed with the intent of keeping your browser distraction-free to boost productivity. 
+Boring-Fox offers a window with tabs-like buttons to organise its functionality. It has a range of helpful features designed to elevate your browsing experience. They are not cluttered and all over the place; rather, they're thoughtfully placed with the intent of keeping your browser distraction-free to boost productivity. 
 
 <br>
 
 ### Tab based bookmarks
-![1](https://github.com/ycatsh/smart-fox/assets/91330011/30429133-6bb3-4734-b4e6-1ae1274cc4bb)
+![1](https://github.com/ycatsh/Smart-Fox/assets/91330011/30429133-6bb3-4734-b4e6-1ae1274cc4bb)
 <br>
 Experience a visually stunning browsing interface with the theme's minimalist design and functional yet elegant features.
 
 <br>
 
 ### Daily Note
-![2](https://github.com/ycatsh/smart-fox/assets/91330011/9337426b-3144-44da-a1be-ec9dd33bac55)
+![2](https://github.com/ycatsh/Smart-Fox/assets/91330011/9337426b-3144-44da-a1be-ec9dd33bac55)
 <br>
 Stay productive with the integrated daily note feature. Create and manage your tasks right from your start page.
 
 <br>
 
 ### Weather Information 
-![3](https://github.com/ycatsh/smart-fox/assets/91330011/4e98d673-1f33-4d5d-b20c-426116ae58c3)
+![3](https://github.com/ycatsh/Smart-Fox/assets/91330011/4e98d673-1f33-4d5d-b20c-426116ae58c3)
 <br>
-Check the weather right on your Firefox homepage for convenient access to up-to-date information. To set this up make an account with [openweathermap](https://openweathermap.org/) and use your API key in the `scripts/temp.js` file.
+Check the weather right on your Firefox homepage for convenient access to up-to-date information. To set this up make an account with [openweathermap](https://openweathermap.org/) and use your API key in the `config.js file.
 
 <br>
 
 ### Useful Tools 
-![4](https://github.com/ycatsh/smart-fox/assets/91330011/ac75ab68-a842-4ce3-baf2-0286e4178713)
+![4](https://github.com/ycatsh/Smart-Fox/assets/91330011/ac75ab68-a842-4ce3-baf2-0286e4178713)
 <br>
-Convert currencies whenever you want. To set conversion up make an account with [exchangerate-api](https://app.exchangerate-api.com/) and use your API key in the `scripts/curr.js` file.
+Convert currencies whenever you want. To set conversion up make an account with [exchangerate-api](https://app.exchangerate-api.com/) and use your API key in the `config.js` file.
 
 
 <br>
 <br>
+
+
+## Configuration  
+The theme can be configured and customized by editing the `config.js` file. It is pretty self explanatory but it allows you to update/add the following:  
+1. API keys
+2. Location information
+3. Bookmarks
+
+
+<br>
+<br>
+
 
 ## Instructions   
 These instructions provide a step-by-step guide for downloading and applying themes to customize your Firefox. The process is divided into three parts: adding the necessary colors, styling the Firefox elements, and modifying the new tab and homepage with the custom theme.
@@ -60,7 +72,7 @@ These instructions provide a step-by-step guide for downloading and applying the
 
 2. Enter `about:profiles` on the url bar and open the root directory under `deafult-release` to go to your profile folder 
    
-3. Copy `chrome/` and `smart-fox` from this repo into the profile folder.
+3. Copy `chrome/` and `boring-fox` from this repo into the profile folder.
 
 ### Start Page
 
@@ -120,4 +132,4 @@ All ASCII art, except for the graph found on the currency converter tab, is not 
 <br>
 
 ## Other Themes 
-If you're looking for a more streamlined and functional start page, you can find some themes from the `themes/` directory. These themes feature a minimalist design and a simple yet elegant look, creating a comfortable browsing experience. Feel free to browse and choose from these themes to personalize your Firefox homepage according to your preferences and style.
+If you're looking for a more streamlined and functional start page, you can find some themes from the `other/` directory. These themes feature a minimalist design and a simple yet elegant look, creating a comfortable browsing experience. Feel free to browse and choose from these themes to personalize your Firefox homepage according to your preferences and style.
