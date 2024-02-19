@@ -1,4 +1,4 @@
-![graphic](https://github.com/ycatsh/boring-fox/assets/91330011/04e10f82-239b-4b5e-8fbb-8d7cb0153f73)
+![graphic](https://github.com/ycatsh/boring-fox/assets/91330011/ee1e08b6-35b5-418b-b84b-7646b4b8234e)
 <br>
 
 Boring-Fox is primarily developed with [JavaScript](https://en.wikipedia.org/wiki/JavaScript) and [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS). It offers a sophisticated and intuitive browsing experience for users seeking efficiency and convenience, and who are just a tad bit boring. With its minimal and retro design, Boring-Fox combines boring aesthetics with functionality seamlessly. The theme enhances your Firefox homepage by providing easy access to bookmarks, daily notes, and weather widgets within a single, cohesive interface.
