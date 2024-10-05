@@ -319,6 +319,7 @@ select {
     border: 1px solid #868c92;
     color: #fff;
     padding: 10px;
+    width: 124px;
     font-size: var(--font-size-smaller);
 }
 
