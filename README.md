@@ -1,4 +1,4 @@
-![graphic](https://github.com/ycatsh/boring-fox/assets/91330011/336f5cd8-6ba0-479f-a1b0-bd626aa38c59)
+![graphic](https://github.com/user-attachments/assets/e9941297-3e90-44bd-9fdb-0a584126d0b2)
 <br>
 
 Boring-Fox is primarily developed with [JavaScript](https://en.wikipedia.org/wiki/JavaScript) and [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS). It offers a sophisticated and intuitive browsing experience for users seeking efficiency and convenience, and who are just a tad bit boring. With its minimal and retro design, Boring-Fox combines boring aesthetics with functionality seamlessly. The theme enhances your Firefox homepage by providing easy access to bookmarks, daily notes, weather widgets, as well as unit and currency conversion within a single, cohesive interface.
@@ -6,9 +6,9 @@ Boring-Fox is primarily developed with [JavaScript](https://en.wikipedia.org/wik
 <br>
 <div align="center">
     
-![stars](https://img.shields.io/github/stars/ycatsh/Smart-Fox?&color=3b3d3f&labelColor=1d1e1f&style=for-the-badge)
-![issues-closed](https://img.shields.io/github/issues-closed/ycatsh/Smart-Fox?color=3b3d3f&labelColor=1d1e1f&style=for-the-badge)
-![issues-open](https://img.shields.io/github/issues/ycatsh/Smart-Fox?color=3b3d3f&labelColor=1d1e1f&style=for-the-badge)
+![stars](https://img.shields.io/github/stars/ycatsh/Boring-Fox?&color=2e2e2f&labelColor=202020&style=for-the-badge)
+![issues-closed](https://img.shields.io/github/issues-closed/ycatsh/Boring-Fox?color=2e2e2f&labelColor=202020&style=for-the-badge)
+![issues-open](https://img.shields.io/github/issues/ycatsh/Boring-Fox?color=2e2e2f&labelColor=202020&style=for-the-badge)
     
 </div>
 
@@ -18,30 +18,30 @@ Boring-Fox offers a window with tabs-like buttons to organise its functionality.
 <br>
 
 ### Tab based bookmarks
-![1](https://github.com/ycatsh/Smart-Fox/assets/91330011/30429133-6bb3-4734-b4e6-1ae1274cc4bb)
+![1](https://github.com/user-attachments/assets/b0207ce3-d3fd-4f9f-b3cb-752f800c5391)
 <br>
 Experience a visually stunning browsing interface with the theme's minimalist design and functional yet elegant features.
 
 <br>
 
-### Daily Note
-![2](https://github.com/ycatsh/Smart-Fox/assets/91330011/9337426b-3144-44da-a1be-ec9dd33bac55)
-<br>
-Stay productive with the integrated daily note feature. Create and manage your tasks right from your start page.
-
-<br>
-
 ### Weather Information 
-![3](https://github.com/ycatsh/Smart-Fox/assets/91330011/4e98d673-1f33-4d5d-b20c-426116ae58c3)
+![2](https://github.com/user-attachments/assets/9a1a400d-3c34-4fe7-b8e9-9d92edc68e95)
 <br>
 Check the weather right on your Firefox homepage for convenient access to up-to-date information. To set this up make an account with [openweathermap](https://openweathermap.org/) and paste your API key in the `scripts/temp.js` file.
 
 <br>
 
 ### Useful Tools 
-![4](https://github.com/ycatsh/Smart-Fox/assets/91330011/ac75ab68-a842-4ce3-baf2-0286e4178713)
+![3](https://github.com/user-attachments/assets/f3400e3c-9651-44cc-b7e8-4d73c482bc5a)
 <br>
 Convert currencies and units whenever you want. To set up currency conversion make an account with [exchangerate-api](https://app.exchangerate-api.com/) and use paste API key in the `scripts/conv.js` file.
+
+<br>
+
+### Daily Note
+![4](https://github.com/user-attachments/assets/7b3e6771-96cf-4e15-bf4c-80e6f3d73153)
+<br>
+Stay productive with the integrated daily note feature. Create and manage your tasks right from your start page.
 
 
 <br>
