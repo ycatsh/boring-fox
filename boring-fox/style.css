@@ -11,13 +11,14 @@
     --primary-color: #2b2b2b;
     --secondary-color: #363636;
     --font-primary: Minecraftia;
-    --font-secondary: Fira Mono;
-    --font-ascii: Fira Mono;
+    --font-secondary: Montserrat;
+    --font-mono: Fira Mono;
     --font-size-mini: 0.66em;
 	--font-size-ascii: 12px;
     --font-size-smaller: 16px;
     --font-size-small: 17px;
     --font-size-medium: 18px;
+    --font-size-content: 20px;
     --font-size-large: 34px;
     --shadow: rgba(0, 0, 0, 0.3);
     --link-color: #85888b;
@@ -136,7 +137,7 @@ h1 {
 }
 
 a {
-    font-family: var(--font-secondary);
+    font-family: var(--font-mono);
     font-size: var(--font-size-medium);
     text-decoration: none;
     color: var(--link-color);
@@ -225,6 +226,7 @@ a:hover {
 
 #notes-list {
     font-family: var(--font-secondary);
+    font-size: var(--font-size-medium);
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -253,11 +255,13 @@ a:hover {
 }
 
 .note-content {
-    font-size: var(--font-size-smaller);
+    font-size: var(--font-size-content);
+    padding-bottom: 5px;
 }
 
 .note-date {
-    font-size: var(--font-size-smaller);
+    font-family: var(--font-secondary);
+    font-size: var(--font-size-medium);
     color: #bebebe;
     margin-top: 5px;
 }
@@ -341,7 +345,7 @@ select {
 ========================================== */
 
 .weather {
-    font-family: var(--font-secondary);
+    font-family: var(--font-mono);
     font-size: var(--font-size-large);
     display: flex;
     flex-direction: column;
@@ -398,7 +402,7 @@ select {
 ========================================== */
 
 .ascii {
-    font-family: var(--font-ascii);
+    font-family: var(--font-mono);
     font-size: var(--font-size-ascii);
     margin-top: 10px;
     margin-bottom: -10px;

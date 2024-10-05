@@ -17,3 +17,13 @@
 	url('fonts/Minecraftia/Minecraftia-Regular.ttf')  format('truetype'),
 	url('fonts/Minecraftia/Minecraftia-Regular.svg') format('svg');
 }
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url('fonts/Montserrat/Montserrat-Regular.eot?#iefix') format('embedded-opentype'),
+	url('fonts/Montserrat/Montserrat-Regular.eot'),
+	url('fonts/Montserrat/Montserrat-Regular.woff') format('woff'), 
+	url('fonts/Montserrat/Montserrat-Regular.woff2') format('woff2'), 
+	url('fonts/Montserrat/Montserrat-Regular.ttf')  format('truetype'),
+	url('fonts/Montserrat/Montserrat-Regular.svg') format('svg');
+}
