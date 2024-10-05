@@ -387,7 +387,7 @@ select {
 }
 
 .default {
-    color: var(--secondary-color);
+    color: #c9c9c9;
 }
 
 
