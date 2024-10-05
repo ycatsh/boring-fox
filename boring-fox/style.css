@@ -1,3 +1,5 @@
+@import url('fonts.css');
+
 /* ==========================================
     RESET & BASE STYLES
 ========================================== */
@@ -8,12 +10,15 @@
     --text-color: #ffffff;
     --primary-color: #2b2b2b;
     --secondary-color: #363636;
-    --font-primary: "Minecraftia", sans-serif;
-    --font-secondary: "MS Sans Serif", sans-serif;
-    --font-ascii: monospace;
-	--font-size-ascii: 9px;
-    --font-size-small: 12px;
-    --font-size-medium: 14px;
+    --font-primary: Minecraftia;
+    --font-secondary: Fira Mono;
+    --font-ascii: Fira Mono;
+    --font-size-mini: 0.66em;
+	--font-size-ascii: 12px;
+    --font-size-smaller: 16px;
+    --font-size-small: 17px;
+    --font-size-medium: 18px;
+    --font-size-large: 34px;
     --shadow: rgba(0, 0, 0, 0.3);
     --link-color: #85888b;
     --link-hover-bg: rgb(78, 80, 82);
@@ -48,22 +53,21 @@ body {
 /* Main Box */
 .container {
     position: relative;
-    width: 750px;
-    height: 400px;
+    width: 1150px;
+    height: 620px;
     padding: 20px;
     background-color: var(--primary-color);
     box-shadow: 0 0 10px var(--shadow);
 }
 
-
 .tab {
     border: none;
     background-color: transparent;
-    width: 30px;
-    height: 22px;
+    width: 42px;
+    height: 36px;
     cursor: pointer;
     color: #ffffff;
-    font-size: 12px;
+    font-size:  var(--font-size-small);
 }
 
 #tab-group {
@@ -78,16 +82,15 @@ body {
     background-color: var(--secondary-color);
 }
 
-
-
 h1 {
     font-size: var(--font-size-small);
-    margin-bottom: 20px;
-    margin-top: 17px;
+    font-weight: 300;   
+    margin-bottom: 10px;
+    margin-top: 25px;
 }
 
 #time-line {
-    margin-top: 0px;
+    margin-top: 30px;
     margin-bottom: 30px;
     letter-spacing: 1.5px;
     word-spacing: 5px;
@@ -120,9 +123,10 @@ h1 {
 }
 
 .folder {
-    font-size: var(--font-size-small);
+    font-size: var(--font-size-smaller);
+    margin-top: 5%;
     margin-bottom: 1.5%;
-    width: 200px;
+    width: 300px;
     letter-spacing: 1px;
     display: block;
     font-weight: bold;
@@ -138,7 +142,7 @@ a {
     color: var(--link-color);
     transition: color 0.2s;
     display: block;
-    padding: 2px;
+    padding: 4px;
 }
 
 a:hover {
@@ -148,11 +152,17 @@ a:hover {
 .columns {
     display: flex;
     justify-content: space-between;
-    margin-top: -10px;
+    margin-top: -20px;
 }
 
 .column {
     width: 50%;
+}
+
+#folder-2 {
+    font-family: var(--font-primary);
+    width: 250px;
+    margin-bottom: 5%;
 }
 
 
@@ -175,14 +185,17 @@ a:hover {
 }
 
 #add-button, #clear-button {
-    font-size: 10px;
-    width: 60px;
+    font-size: var(--font-size-mini);
+    height: 34px;
+    width: 100px;
     font-family: var(--font-primary);
     background-color: var(--secondary-color);
-    border: 2px solid #757779;
+    border: 2px solid #626364;
     transition: all ease-in-out 0.3s;
-    padding-top: 3px;
-}
+    padding-top: 7px;
+    box-shadow: inset 1px 1px 0px #929293, inset -1px -1px 0px #000000;
+    transition: all ease-in-out 0.3s;
+}   
 
 #add-button {
     border-right: none;
@@ -190,6 +203,7 @@ a:hover {
 
 #add-button:hover, #clear-button:hover {
     background-color: var(--primary-color);
+    box-shadow: inset -1px -1px 0px #929293, inset 1px 1px 0px #000000;
 }
 
 #notes-input {
@@ -197,14 +211,15 @@ a:hover {
     left: 0; 
     width: 90%;
     display: flex;
-    height: 20px;
+    height: 32px;
+    padding-left: 10px;
     justify-content: flex-start; 
     position: absolute; 
     border: none;
     font-family: var(--font-secondary);
     background-color: var(--secondary-color);
     color: #ffffff;
-    font-size: 12px;
+    font-size: var(--font-size-medium);
     outline: none;
 }
 
@@ -238,11 +253,11 @@ a:hover {
 }
 
 .note-content {
-    font-size: 12px;
+    font-size: var(--font-size-smaller);
 }
 
 .note-date {
-    font-size: 10px;
+    font-size: var(--font-size-smaller);
     color: #bebebe;
     margin-top: 5px;
 }
@@ -251,42 +266,70 @@ a:hover {
 
 
 /* ==========================================
-    CURRENCY CONVERSION STYLING
+    CONVERSION STYLING
 ========================================== */
 
-#curr-conv-info {
-    margin-top: 0%;
-    font-family: var(--font-primary);
-    font-size: var(--font-size-small);
-    letter-spacing: 1px;
+.conversion-container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.conversion-box {
+    padding: 15px;
+    margin-top: -20px;
+    border: 2px solid #363636;
+    background-color: transparent;
+}
+
+.conversion-box h2 {
+    margin: 0 0 10px 0;
+    font-weight: 200;
     word-spacing: 5px;
+    font-size: var(--font-size-smaller);
 }
 
-#rate-conv-info {
+.currency, .unit-conversion-box {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    gap: 10px;
+}
+
+#amount1, #unit-input, #amount2, #unit-result {
+    border: 1px solid #868c92;
+    color: #ffffff;
+    padding: 10px;
+    height: 20px;
+    background-color: transparent;
+    font-size: var(--font-size-smaller);
+}
+
+#amount1:focus, #unit-input:focus {
+    border: 1px solid #a3be8c;
+    outline: none;
+}
+
+#amount2, #unit-result{
+    cursor: not-allowed;
+}
+
+select {
+    background-color: #363636;
+    border: 1px solid #868c92;
+    color: #fff;
+    padding: 10px;
+    font-size: var(--font-size-smaller);
+}
+
+#rate-conv-info{
+    margin-top: 15px;
+    color: #a3be8c;
+}
+
+#to{
     margin-top: 10px;
-    font-family: var(--font-secondary);
-    font-size: var(--font-size-small);
-    letter-spacing: 1px;
-}
-
-.currency input {
-    background-color: var(--secondary-color);
-    height: 25px;
-    color: var(--text-color);
-    border: none;
-}
-
-.currency input:focus {
-    outline: none;
-}
-
-.currency select {
-    background-color: var(--secondary-color);
-    border: 2px solid var(--secondary-color);
-    height: 27px;
-    outline: none;
-    border: none;
-    color: #bebebe;
+    font-size: 14px;
 }
 
 
@@ -298,11 +341,11 @@ a:hover {
 
 .weather {
     font-family: var(--font-secondary);
-    font-size: 24px;
+    font-size: var(--font-size-large);
     display: flex;
     flex-direction: column;
-    margin-top: -23%;
-    margin-left: 15%;
+    margin-top: -25%;
+    margin-left: 12.5%;
     align-items: left;
 }
 
@@ -322,6 +365,30 @@ a:hover {
     margin-left: -5%;
 }
 
+.sunny, .bolt {
+    color: #EBCB8B;
+}
+
+.cloudy {
+    color: #81A1C1;
+}
+
+.rainy {
+    color: #5E81AC;
+}
+
+.snowy {
+    color: #88C0D0;
+}
+
+.foggy {
+    color: #4C566A;
+}
+
+.default {
+    color: var(--secondary-color);
+}
+
 
 
 
@@ -332,7 +399,8 @@ a:hover {
 .ascii {
     font-family: var(--font-ascii);
     font-size: var(--font-size-ascii);
-    margin-top: -22px;
+    margin-top: 10px;
+    margin-bottom: -10px;
     margin-left: -60px;
     text-align: center;
     font-weight: lighter;
@@ -340,15 +408,11 @@ a:hover {
 }
 
 #ascii-placeholder-2 {
-    font-size: 6px;
-    margin-left: 65%;
-    margin-top: 13%;
-}
-
-#ascii-placeholder-3 {
-    margin-right: 25%;
+    font-size: var(--font-size-mini);
+    margin-left: 60%;
+    margin-top: 10%;
 }
 
 #ascii-placeholder-4 {
-    margin-top: 1%;
+    margin-right: 25%;
 }
