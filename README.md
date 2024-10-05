@@ -109,7 +109,7 @@ These instructions provide a step-by-step guide for downloading and applying the
 
 ## Fonts
 
-The font files are already present in the theme. If you want to manually incorporate the required fonts into the theme, download [Minecraftia](https://www.dafont.com/minecraftia.font) and [Fira Mono](https://fonts.google.com/specimen/Fira+Mono), then rename the font variables accordingly. Alternatively, you can choose any font by modifying the variables located at the top of the `style.css` file.
+The font files are already present in the theme. If you want to manually incorporate the required fonts into the theme, download [Minecraftia](https://www.dafont.com/minecraftia.font), [Fira Mono](https://fonts.google.com/specimen/Fira+Mono), and [Montserrat](https://fonts.google.com/specimen/Montserrat), then rename the font variables accordingly. Alternatively, you can choose any font by modifying the variables located at the top of the `style.css` file.
 
 <br>
 
