@@ -34,7 +34,7 @@ Check the weather right on your Firefox homepage for convenient access to up-to-
 ### Useful Tools 
 ![3](https://github.com/user-attachments/assets/f3400e3c-9651-44cc-b7e8-4d73c482bc5a)
 <br>
-Convert currencies and units whenever you want. To set up currency conversion make an account with [exchangerate-api](https://app.exchangerate-api.com/) and use paste API key in the `scripts/conv.js` file.
+Convert currencies and units whenever you want. To set up currency conversion make an account with [exchangerate-api](https://app.exchangerate-api.com/) and paste your API key in the `scripts/conv.js` file.
 
 <br>
 
