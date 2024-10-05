@@ -37,7 +37,7 @@ function create_note(note_text) {
 
     var note_content = document.createElement("div");
     note_content.className = "note-content";
-    note_content.innerText = note_text;
+    note_content.innerHTML = note_text.replace(/\n/g, "<br>");
 
     var note_date = document.createElement("div");
     note_date.className = "note-date";

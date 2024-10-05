@@ -1,12 +1,16 @@
-import config from "../config.js";
+/* ==========================================
+CURRENCY CONVERSION CONFIG
+========================================== */
 
+const api_key = "";  //Example (put your ExchangeRate-API key here)
+
+
+// Currency Conversion
 const amt_element = document.getElementById('amount1');
 const curr_element = document.getElementById('currency1');
 const conv_amt_element = document.getElementById('amount2');
 const conv_curr_element = document.getElementById('currency2');
 const rate_element = document.getElementById('rate');
-
-const api_key = config.curr_api_key;
 
 amt_element.addEventListener('input', convert_currency);
 curr_element.addEventListener('change', convert_currency);
@@ -64,3 +68,35 @@ async function convert_currency() {
 }
 
 update_currencies();
+
+
+// Unit Conversion
+const unitInput = document.getElementById('unit-input');
+const unitFromSelect = document.getElementById('unit-from');
+const unitToSelect = document.getElementById('unit-to');
+const unitResult = document.getElementById('unit-result');
+
+function convert_units() {
+    const value = parseFloat(unitInput.value.trim());
+    const fromUnit = unitFromSelect.value;
+    const toUnit = unitToSelect.value;
+
+    if (isNaN(value) || value < 0) {
+        unitResult.value = '';
+        return;
+    }
+
+    const conversionFactors = {
+        meters: { meters: 1, centimeters: 100, kilometers: 0.001, miles: 0.000621371 },
+        centimeters: { meters: 0.01, centimeters: 1, kilometers: 0.00001, miles: 0.0000062137 },
+        kilometers: { meters: 1000, centimeters: 100000, kilometers: 1, miles: 0.621371 },
+        miles: { meters: 1609.34, centimeters: 160934, kilometers: 1.60934, miles: 1 }
+    };
+
+    const convertedValue = value * conversionFactors[fromUnit][toUnit];
+    unitResult.value = `${convertedValue.toFixed(2)}`;
+}
+
+unitInput.addEventListener('input', convert_units);
+unitFromSelect.addEventListener('change', convert_units);
+unitToSelect.addEventListener('change', convert_units);
