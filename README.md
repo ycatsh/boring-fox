@@ -1,7 +1,7 @@
 ![graphic](https://github.com/ycatsh/boring-fox/assets/91330011/336f5cd8-6ba0-479f-a1b0-bd626aa38c59)
 <br>
 
-Boring-Fox is primarily developed with [JavaScript](https://en.wikipedia.org/wiki/JavaScript) and [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS). It offers a sophisticated and intuitive browsing experience for users seeking efficiency and convenience, and who are just a tad bit boring. With its minimal and retro design, Boring-Fox combines boring aesthetics with functionality seamlessly. The theme enhances your Firefox homepage by providing easy access to bookmarks, daily notes, and weather widgets within a single, cohesive interface.
+Boring-Fox is primarily developed with [JavaScript](https://en.wikipedia.org/wiki/JavaScript) and [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS). It offers a sophisticated and intuitive browsing experience for users seeking efficiency and convenience, and who are just a tad bit boring. With its minimal and retro design, Boring-Fox combines boring aesthetics with functionality seamlessly. The theme enhances your Firefox homepage by providing easy access to bookmarks, daily notes, weather widgets, as well as unit and currency conversion within a single, cohesive interface.
 <br>
 <br>
 <div align="center">
@@ -34,14 +34,14 @@ Stay productive with the integrated daily note feature. Create and manage your t
 ### Weather Information 
 ![3](https://github.com/ycatsh/Smart-Fox/assets/91330011/4e98d673-1f33-4d5d-b20c-426116ae58c3)
 <br>
-Check the weather right on your Firefox homepage for convenient access to up-to-date information. To set this up make an account with [openweathermap](https://openweathermap.org/) and use your API key in the `config.js file.
+Check the weather right on your Firefox homepage for convenient access to up-to-date information. To set this up make an account with [openweathermap](https://openweathermap.org/) and paste your API key in the `scripts/temp.js` file.
 
 <br>
 
 ### Useful Tools 
 ![4](https://github.com/ycatsh/Smart-Fox/assets/91330011/ac75ab68-a842-4ce3-baf2-0286e4178713)
 <br>
-Convert currencies whenever you want. To set conversion up make an account with [exchangerate-api](https://app.exchangerate-api.com/) and use your API key in the `config.js` file.
+Convert currencies and units whenever you want. To set up currency conversion make an account with [exchangerate-api](https://app.exchangerate-api.com/) and use paste API key in the `scripts/conv.js` file.
 
 
 <br>
@@ -49,9 +49,9 @@ Convert currencies whenever you want. To set conversion up make an account with 
 
 
 ## Configuration  
-The theme can be configured and customized by editing the `config.js` file. It is pretty self explanatory but it allows you to update/add the following:  
+The theme can be configured and customized by editing the `scripts/tabs.js`, `scripts/temp.js`, `scripts/conv.js` files. It is pretty self explanatory but it allows you to update/add the following:  
 1. API keys
-2. Location information
+2. Location information 
 3. Bookmarks
 
 
@@ -64,7 +64,7 @@ These instructions provide a step-by-step guide for downloading and applying the
 
 ### Colors
 
-1. Download the [Firefox Color](https://addons.mozilla.org/en-US/firefox/addon/firefox-color/) add-on. To use the default colors of the theme, click [here](https://color.firefox.com/?theme=XQAAAAKEAwAAAAAAAABBKYhm849SCicxcUUSqiuG_ebZUZXOFqqYn_O4akhBDGiaWd0FjBOq31N1Flo2QaWxtQ6soXvQmPL_Upd3YVaTP-QTAEKfKo8_hUfLueZP0k-rmfVo_jfFNFb9HyVOXU-NXjQTv-zSu7Kg9-Tq4byjMV_kXKgDR38tZi2Sj_zhU8Yx8VVEDTHPt_Hrq_c76cKBmBJ7cdswAG8dWDtuxHy-h8_3x4rFOA9xicLWh1BQYBcy6btytJVQesYC7-wijAstUFJCME_7oZf8zWtJwxFNeZWnIlN0udLKf9nEhZ8dGv2LxOyfB9o6IxUESTxlqTIxJd6KXPKluMOGt7dQEEFyS5cdLcpkX0tJ0783fdze03GDAFjNR4SgEdnTOyL2G7UFsfP7SQmn35SPgaMXALaNe85AqRcMUx1yZ2OW8sLmiCDaoXA9kWgKSBae2ugq6SbaAT2Zft0--OQgTJtn8Y9Vonp3a7JRa-8kQBDrF880_ff6Cg) to add them to Firefox. You can also customize the colors to your liking. 
+1. Download the [Firefox Color](https://addons.mozilla.org/en-US/firefox/addon/firefox-color/) add-on. To use the default colors of the theme, click [here](https://color.firefox.com/?theme=XQAAAAKEAwAAAAAAAABBKYhm849SCicxcUUSqiuG_ebZUZXOFqq-xzYqmKAKYyDZnHmbjO_VoNYUbmDc3gyZbFcmGEcSMfG8ny6dpdlnCVFOUqWQLLOzXX9FMWXkGoYmv23LdNR0bxjv21c6KuertwF-2DfJrieaJoQiNFgzILPpf7JMvqJC3-4gCbd-jB8szjUT20cXTTEvNV51fgMppmUS9oPJ17SnB84E6hdIg0ll2YYSCofK4P2Komedrb2jIs6b2I2_217C1iobfQ8vbPNz5whJrWZPuzNOFL60yNcXibipXbZddNhCNiBUOfxwgsjHhJAOwGsvPRjpul33ZP4dYjkM1-8zDfX4JS4iS0xZcyahdrJi_th_tTbCnhfq3sfXFkNthF2fVUAyyU8fpCb6uVF3xaPr_Z2Be1xlSY_2pCchjmuvnVCoBOCyxxOBQ5ltOt5eskg0zSl47hr4LP9g8E1MyzfhxxGwW4zU5j1ZRW_bBajyUw3VDGublCv9KsT1) to add them to Firefox. You can also customize the colors to your liking. 
 
 ### Custom Styling
 
@@ -109,7 +109,7 @@ These instructions provide a step-by-step guide for downloading and applying the
 
 ## Fonts
 
-To incorporate the required fonts into the theme, download [Minecraftia](https://www.dafont.com/minecraftia.font) and [Coder's Crux](https://www.dafont.com/coders-crux.font). Alternatively, you can choose any font by modifying the variables located at the top of the `style.css` file.
+The font files are already present in the theme. If you want to manually incorporate the required fonts into the theme, download [Minecraftia](https://www.dafont.com/minecraftia.font) and [Fira Mono](https://fonts.google.com/specimen/Fira+Mono), then rename the font variables accordingly. Alternatively, you can choose any font by modifying the variables located at the top of the `style.css` file.
 
 <br>
 
