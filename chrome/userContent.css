@@ -1,5 +1,0 @@
-/* Hides Scroll bar */
-
-:root { 
-    scrollbar-width: none !important
-}
