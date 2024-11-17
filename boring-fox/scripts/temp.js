@@ -4,7 +4,7 @@ window.addEventListener('load', () => {
     const weather_temp = document.getElementById('weather-temp');
     const weather_icon = document.getElementById('weather-icon');
     const weather_error = document.getElementById('weather-error');
-
+    
     /* ==========================================
     WEATHER INFORMATION CONFIG
     ========================================== */
@@ -25,14 +25,17 @@ window.addEventListener('load', () => {
             const temperature = Math.round(data.main.temp - 273.15);
             const weather_code = data.weather[0].icon;
 
-            weather_info.innerHTML = `${weather}`;
-            weather_temp.innerHTML = `<span id="feels-like" style="color: #6d7072;">Feels like </span>${temperature}°C`;
+            weather_city.innerHTML = `${location}, ${country}`;
+
             const iconData = get_icon(weather_code);
-            weather_icon.innerHTML = `<i class="fas ${iconData.icon} ${iconData.color_class}"></i>`;
-            weather_city.innerHTML = location + ', ' + country;
+            weather_icon.innerHTML = `<img src="${iconData.png}" style="width: 48px; height: 48px;">`;
+            weather_info.innerHTML = `${weather}`;
+
+            weather_temp.innerHTML = `<div id="feels-like" style="color: #6d7072;">Feels like </div>
+                                      <div id="temp">${temperature}°C</div>`;
         })
         .catch(error => {
-            weather_error.innerHTML = 'An error occurred while fetching the weather data.';
+            weather_error.innerHTML = 'An error occurred while fetching the weather<br><br>Check your API key';
             console.log(error);
     });
 });
@@ -40,25 +43,25 @@ window.addEventListener('load', () => {
 
 function get_icon(code) {
     const icon_map = {
-        '01d': { icon: 'fa-sun', color_class: 'sunny' },
-        '02d': { icon: 'fa-cloud-sun', color_class: 'cloudy' },
-        '03d': { icon: 'fa-cloud', color_class: 'cloudy' },
-        '04d': { icon: 'fa-cloud', color_class: 'cloudy' },
-        '09d': { icon: 'fa-cloud-showers-heavy', color_class: 'rainy' },
-        '10d': { icon: 'fa-cloud-sun-rain', color_class: 'rainy' },
-        '11d': { icon: 'fa-bolt', color_class: 'cloudy' },
-        '13d': { icon: 'fa-snowflake', color_class: 'cloudy' },
-        '50d': { icon: 'fa-smog', color_class: 'foggy' },
-        '01n': { icon: 'fa-moon', color_class: 'default' },
-        '02n': { icon: 'fa-cloud-moon', color_class: 'cloudy' },
-        '03n': { icon: 'fa-cloud', color_class: 'cloudy' },
-        '04n': { icon: 'fa-cloud', color_class: 'cloudy' },
-        '09n': { icon: 'fa-cloud-showers-heavy', color_class: 'rainy' },
-        '10n': { icon: 'fa-cloud-moon-rain', color_class: 'rainy' },
-        '11n': { icon: 'fa-bolt', color_class: 'bolt' },
-        '13n': { icon: 'fa-snowflake', color_class: 'snowy' },
-        '50n': { icon: 'fa-smog', color_class: 'foggy' }
+        '01d': { png: 'static/assets/icons/sun.png'},
+        '02d': { png: 'static/assets/icons/cloud-sun.png'},
+        '03d': { png: 'static/assets/icons/cloud.png'},
+        '04d': { png: 'static/assets/icons/cloud.png'},
+        '09d': { png: 'static/assets/icons/cloud-rain.png'},
+        '10d': { png: 'static/assets/icons/cloud-sun-rain.png'},
+        '11d': { png: 'static/assets/icons/bolt.png'},
+        '13d': { png: 'static/assets/icons/snowflake.png'},
+        '50d': { png: 'static/assets/icons/smog.png'},
+        '01n': { png: 'static/assets/icons/moon.png'},
+        '02n': { png: 'static/assets/icons/cloud-moon.png'},
+        '03n': { png: 'static/assets/icons/cloud.png'},
+        '04n': { png: 'static/assets/icons/cloud.png'},
+        '09n': { png: 'static/assets/icons/cloud-rain.png'},
+        '10n': { png: 'static/assets/icons/cloud-moon-rain.png'},
+        '11n': { png: 'static/assets/icons/bolt.png'},
+        '13n': { png: 'static/assets/icons/snowflake.png'},
+        '50n': { png: 'static/assets/icons/smog.png'}
     };
 
-    return icon_map[code] || { icon: 'fa-question', color_class: 'default-weather' };
+    return icon_map[code] || { png: 'static/assets/icons/question.png'};
 }
