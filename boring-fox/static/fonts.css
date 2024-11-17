@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'Fira Mono';
+    src: url('fonts/Fira%20Mono/FiraMono.woff') format('woff'), 
+         url('fonts/Fira%20Mono/FiraMono.woff2') format('woff2'), 
+         url('fonts/Fira%20Mono/FiraMono.ttf')  format('truetype'),
+}
+
+@font-face {
+    font-family: 'Minecraftia';
+    src: url('fonts/Minecraftia/Minecraftia-Regular.woff') format('woff'), 
+         url('fonts/Minecraftia/Minecraftia-Regular.woff2') format('woff2'), 
+         url('fonts/Minecraftia/Minecraftia-Regular.ttf')  format('truetype'),
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/Montserrat/Montserrat-Regular.woff') format('woff'), 
+         url('fonts/Montserrat/Montserrat-Regular.woff2') format('woff2'), 
+         url('fonts/Montserrat/Montserrat-Regular.ttf')  format('truetype'),
+}
