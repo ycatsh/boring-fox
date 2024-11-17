@@ -32,10 +32,10 @@ function add_currencies(select_element, options, default_value) {
 }
 
 async function update_currencies() {
-    const currencies = ["USD", "INR", "EUR", "GBP", "JPY"];
+    const currencies = ["USD", "EUR", "GBP", "JPY"];
 
     add_currencies(curr_element, currencies, "USD");
-    add_currencies(conv_curr_element, currencies, "JPY");
+    add_currencies(conv_curr_element, currencies, "EUR");
 }
 
 async function convert_currency() {
@@ -63,6 +63,7 @@ async function convert_currency() {
         conv_amt_element.value = conv_amt.toFixed(2);
     } 
     catch (error) {
+        rate_element.innerHTML = `Error. Check API key.`;
         console.log('Error:', error);
     }
 }
@@ -87,16 +88,20 @@ function convert_units() {
     }
 
     const conversionFactors = {
-        meters: { meters: 1, centimeters: 100, kilometers: 0.001, miles: 0.000621371 },
-        centimeters: { meters: 0.01, centimeters: 1, kilometers: 0.00001, miles: 0.0000062137 },
-        kilometers: { meters: 1000, centimeters: 100000, kilometers: 1, miles: 0.621371 },
-        miles: { meters: 1609.34, centimeters: 160934, kilometers: 1.60934, miles: 1 }
+        feet: { meters: 0.3048, centimeters: 30.48, kilometers: 0.0003048, miles: 0.000189394, inches: 12, feet: 1},
+        inches: { meters: 0.0254, centimeters: 2.54, kilometers: 0.00002540005, miles: 0.00001578282, inches: 1, feet: 0.0833333},
+        centimeters: { meters: 0.01, centimeters: 1, kilometers: 0.00001, miles: 0.0000062137, inches: 0.3937008, feet: 0.0328084},
+        meters: { meters: 1, centimeters: 100, kilometers: 0.001, miles: 0.000621371, inches: 39.37008, feet: 3.28084},
+        kilometers: { meters: 1000, centimeters: 100000, kilometers: 1, miles: 0.621371, inches: 39370.08, feet: 3280.84},
+        miles: { meters: 1609.34, centimeters: 160934, kilometers: 1.60934, miles: 1, inches: 63360.00202752, feet: 5280.00016896},
     };
 
     const convertedValue = value * conversionFactors[fromUnit][toUnit];
     unitResult.value = `${convertedValue.toFixed(2)}`;
 }
 
+unitFromSelect.value = "centimeters";
+unitToSelect.value = "feet";
 unitInput.addEventListener('input', convert_units);
 unitFromSelect.addEventListener('change', convert_units);
 unitToSelect.addEventListener('change', convert_units);
