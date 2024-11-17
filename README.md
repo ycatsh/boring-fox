@@ -1,7 +1,7 @@
 ![graphic](https://github.com/user-attachments/assets/e9941297-3e90-44bd-9fdb-0a584126d0b2)
 <br>
 
-Boring-Fox is primarily developed with [JavaScript](https://en.wikipedia.org/wiki/JavaScript) and [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS). It offers a sophisticated and intuitive browsing experience for users seeking efficiency and convenience, and who are just a tad bit boring. With its minimal and retro design, Boring-Fox combines boring aesthetics with functionality seamlessly. The theme enhances your Firefox homepage by providing easy access to bookmarks, daily notes, weather widgets, as well as unit and currency conversion within a single, cohesive interface.
+Boring-Fox is primarily developed with [JavaScript](https://en.wikipedia.org/wiki/JavaScript) and [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS). It offers a sophisticated and intuitive browsing experience for users seeking efficiency and convenience, and who are just a tad bit boring. With its minimal and retro design, Boring-Fox combines boring aesthetics with functionality seamlessly. The theme enhances your Firefox homepage by providing easy access to bookmarks, weather widgets, as well as unit and currency conversion within a single, cohesive interface.
 <br>
 <br>
 <div align="center">
@@ -35,13 +35,6 @@ Check the weather right on your Firefox homepage for convenient access to up-to-
 ![3](https://github.com/user-attachments/assets/f3400e3c-9651-44cc-b7e8-4d73c482bc5a)
 <br>
 Convert currencies and units whenever you want. To set up currency conversion make an account with [exchangerate-api](https://app.exchangerate-api.com/) and paste your API key in the `scripts/conv.js` file.
-
-<br>
-
-### Daily Note
-![4](https://github.com/user-attachments/assets/7b3e6771-96cf-4e15-bf4c-80e6f3d73153)
-<br>
-Stay productive with the integrated daily note feature. Create and manage your tasks right from your start page.
 
 
 <br>
@@ -89,7 +82,7 @@ These instructions provide a step-by-step guide for downloading and applying the
     pref("general.config.sandbox_enabled", false); 
     ```
 
-2. Navigate one directory back to `defaults/` and create `autoconfig.cfg` and paste in the code below:
+2. Navigate two directories back to the Firefox directory and create `autoconfig.cfg` and paste in the code below:
     ```javascript
     //  
     var {classes:Cc,interfaces:Ci,utils:Cu} = Components;  
@@ -132,4 +125,4 @@ All ASCII art, except for the graph found on the currency converter tab, is not 
 <br>
 
 ## Other Themes 
-If you're looking for a more streamlined and functional start page, you can find some themes from the `other/` directory. These themes feature a minimalist design and a simple yet elegant look, creating a comfortable browsing experience. Feel free to browse and choose from these themes to personalize your Firefox homepage according to your preferences and style.
+If you're looking for a more streamlined and functional start page, you can find some themes from the `other-themes/` directory. These themes feature a minimalist design and a simple yet elegant look, creating a comfortable browsing experience. Feel free to browse and choose from these themes to personalize your Firefox homepage according to your preferences and style.
