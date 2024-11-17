@@ -174,16 +174,10 @@ const data = [
         label: "4", 
         content: `tools`
     },
-
-    {
-        id: "content5", 
-        label: "5", 
-        content: `notes`
-    },
 ]
 
 function create_tabs() {
-    var tabs_left = document.getElementById("tab-group");
+    var tabs = document.getElementById("tab-group");
     var container = document.querySelector(".container");
 
     for (var i = 0; i < data.length; i++) {
@@ -197,7 +191,7 @@ function create_tabs() {
 
         content.className = "content";
         content.id = data[i].id;
-        tabs_left.appendChild(tab);
+        tabs.appendChild(tab);
         container.appendChild(content)
     }
 }
@@ -229,6 +223,5 @@ function show_content(event) {
 }
 
 create_tabs();
-
 var default_tab = document.querySelector('.tab[data-content-id="content1"]');
 show_content({ currentTarget: default_tab });
