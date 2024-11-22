@@ -65,7 +65,7 @@ The below step-by-step guide is divided into three parts: colors, userChrome.css
 
 2. Enter `about:profiles` on the url bar and open the root directory under `deafult-release` to go to your profile folder 
    
-3. Copy `chrome/` and `boring-fox` from this repo into the profile folder.
+3. Copy `chrome/` and `boring-fox/` from this repo into the profile folder.
 
 ### Start Page
 
@@ -82,19 +82,19 @@ The below step-by-step guide is divided into three parts: colors, userChrome.css
     pref("general.config.sandbox_enabled", false); 
     ```
 
-2. Navigate two directories back to the Firefox directory and create `autoconfig.cfg` and paste in the code below:
+2. Navigate two directories back to the Firefox directory and create `autoconfig.cfg` and paste in the code below. Make sure to replace `newTabURL` with the path of the `boring-fox/index.html` file (it should look something like this: `file:///<path_to_firefox_dir>/boring-fox/index.html`):
     ```javascript
     //  
     var {classes:Cc,interfaces:Ci,utils:Cu} = Components;  
     
     try {  
     Cu.import("resource:///modules/AboutNewTab.jsm");  
-    var newTabURL = "file:///PATH_TO_YOUR_START_PAGE.html";  
+    var newTabURL = "file:///PATH_TO_YOUR_INDEX.html";  
     AboutNewTab.newTabURL = newTabURL;  
     } catch(e){Cu.reportError(e);} // report errors in the Browser Console  
     ```
 
-3. Change homepage under Firefox settings to 'Custom URLs' and paste in the path. 
+3. Change homepage under Firefox settings to 'Custom URLs' and paste in the same path (to the index.html) as step 2.
 
 4. Restart Firefox. 
 
