@@ -53,7 +53,7 @@ The theme can be configured and customized by editing the `scripts/tabs.js`, `sc
 
 
 ## Instructions   
-These instructions provide a step-by-step guide for downloading and applying themes to customize your Firefox. The process is divided into three parts: adding the necessary colors, styling the Firefox elements, and modifying the new tab and homepage with the custom theme.
+The below step-by-step guide is divided into three parts: colors, userChrome.css mods, and modifying the new tab and homepage. If you want the same look as the screenshots, follow all three; otherwise, you can choose to use your own colors or skip the userChrome.css mods as needed.
 
 ### Colors
 
