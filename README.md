@@ -1,4 +1,4 @@
-![graphic](https://github.com/user-attachments/assets/e9941297-3e90-44bd-9fdb-0a584126d0b2)
+![graphic](.gitHub/assets/main.png)
 <br>
 
 Boring-Fox is primarily developed with [JavaScript](https://en.wikipedia.org/wiki/JavaScript) and [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS). It offers a sophisticated and convenient start page for users who are just a tad bit boring. With its minimal and retro design, Boring-Fox combines boring aesthetics with functionality. The theme enhances your Firefox homepage by providing easy access to bookmarks, weather widgets, as well as unit and currency conversion within a single, cohesive interface.
