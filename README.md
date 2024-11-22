@@ -1,7 +1,7 @@
 ![graphic](https://github.com/user-attachments/assets/e9941297-3e90-44bd-9fdb-0a584126d0b2)
 <br>
 
-Boring-Fox is primarily developed with [JavaScript](https://en.wikipedia.org/wiki/JavaScript) and [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS). It offers a sophisticated and intuitive browsing experience for users seeking efficiency and convenience, and who are just a tad bit boring. With its minimal and retro design, Boring-Fox combines boring aesthetics with functionality seamlessly. The theme enhances your Firefox homepage by providing easy access to bookmarks, weather widgets, as well as unit and currency conversion within a single, cohesive interface.
+Boring-Fox is primarily developed with [JavaScript](https://en.wikipedia.org/wiki/JavaScript) and [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS). It offers a sophisticated and convenient start page for users who are just a tad bit boring. With its minimal and retro design, Boring-Fox combines boring aesthetics with functionality. The theme enhances your Firefox homepage by providing easy access to bookmarks, weather widgets, as well as unit and currency conversion within a single, cohesive interface.
 <br>
 <br>
 <div align="center">
@@ -13,7 +13,7 @@ Boring-Fox is primarily developed with [JavaScript](https://en.wikipedia.org/wik
 </div>
 
 ## Features
-Boring-Fox offers a window with tabs-like buttons to organise its functionality. It has a range of helpful features designed to elevate your browsing experience. They are not cluttered and all over the place; rather, they're thoughtfully placed with the intent of keeping your browser distraction-free to boost productivity. 
+Boring-Fox offers a window with tabs-like buttons to organise its functionality. It has a range of helpful features designed to elevate your browsing experience. They are not cluttered and all over the place; rather, they're thoughtfully placed with the intent of keeping your browser distraction-free. 
 
 <br>
 
@@ -125,4 +125,4 @@ All ASCII art, except for the graph found on the currency converter tab, is not 
 <br>
 
 ## Other Themes 
-If you're looking for a more streamlined and functional start page, you can find some themes from the `other-themes/` directory. These themes feature a minimalist design and a simple yet elegant look, creating a comfortable browsing experience. Feel free to browse and choose from these themes to personalize your Firefox homepage according to your preferences and style.
+If you're looking for a more streamlined and simple start page, you can find some of my older themes in the `other-themes/` directory. These are relatively simple and lightweight. Feel free to browse and choose from these themes.
