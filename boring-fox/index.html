@@ -1,77 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <link rel="icon" type="image/x-icon" href="static/assets/favicon.png">
-    <link rel="stylesheet" type="text/css" href="static/style.css">
-    <title>startpage</title>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/x-icon" href="static/assets/favicon.png">
+  <link rel="stylesheet" type="text/css" href="static/style.css">
+  <title>startpage</title>
 </head>
 
 <body>
-    <div class="container">
-        <div class="tabs" id="tab-group"></div>
-
-        <div class="content" id="content3">
-            <h1><pre class="ascii" id="ascii-placeholder-3"></pre></h1>
-            <div class="wrapper">
-                <div class="weather">
-                    <div id="weather-city"></div>
-                    <div id="icon-wrapper">
-                        <div id="weather-icon"></div>
-                        <div id="weather-info"></div>
-                    </div>
-                    <div id="weather-temp"></div>
-                    <div id="weather-error"></div>
-                </div>
-            </div>
+  <div class="container">
+    <div class="tabs" id="tab-group"></div>
+    
+    <div class="content" id="content3">
+      <h1><pre class="ascii" id="ascii-placeholder-3"></pre></h1>
+      <div class="wrapper">
+        <div class="weather">
+          <div id="weather-city"></div>
+          <div id="icon-wrapper">
+            <div id="weather-icon"></div>
+            <div id="weather-info"></div>
+          </div>
+          <div id="weather-temp"></div>
+          <div id="weather-error"></div>
         </div>
-
-        <div class="content" id="content4">
-            <h1><pre class='ascii' id='ascii-placeholder-4'></pre></h1>
-            <h1 id="time-line">Currency and Unit Conversions Toolbox</h1>
-            <div class="conversion-container">
-                <div class="conversion-box">
-                    <h2>Currency Converter</h2>
-                    <div class="currency">
-                        <input id="amount1" placeholder="Amount"/>
-                        <select id="currency1"></select>
-                        <span id="to">TO</span>
-                        <input id="amount2" disabled placeholder="Converted Amount"/>
-                        <select id="currency2"></select>
-                    </div>
-                    <div id="rate-conv-info">Exchange Rate: <span id="rate"></span></div>
-                </div>
-                <div class="conversion-box">
-                    <h2>Unit Conversion</h2>
-                    <div class="unit-conversion-box">
-                        <input id="unit-input" placeholder="Value"/>
-                        <select id="unit-from">
-                            <option value="feet">Feet</option>
-                            <option value="inches">Inches</option>
-                            <option value="meters">Meters</option>
-                            <option value="centimeters" selected>Centimeters</option>
-                            <option value="kilometers">Kilometers</option>
-                            <option value="miles">Miles</option>
-                        </select>
-                        <span id="to">TO</span>
-                        <input id="unit-result" disabled placeholder="Converted Unit"/>
-                        <select id="unit-to">
-                            <option value="feet" selected>Feet</option>
-                            <option value="inches">Inches</option>
-                            <option value="meters">Meters</option>
-                            <option value="centimeters">Centimeters</option>
-                            <option value="kilometers">Kilometers</option>
-                            <option value="miles">Miles</option>
-                        </select>
-                    </div>
-                </div>
-            </div>
-        </div>
+      </div>
     </div>
-    <script src='scripts/tabs.js'></script> 
-    <script src='scripts/time.js'></script>
-    <script src='scripts/temp.js'></script>
-    <script src='scripts/conv.js'></script>
-    <script src='scripts/ascii.js'></script>
+    
+    <div class="content" id="content4">
+      <h1><pre class='ascii' id='ascii-placeholder-4'></pre></h1>
+      <h1 id="time-line">Currency and Unit Conversions Toolbox</h1>
+      <div class="conversion-container">
+        <div class="conversion-box">
+          <h2>Currency Converter</h2>
+          <div class="currency">
+            <input id="amount1" placeholder="Amount"/>
+            <select id="currency1"></select>
+            <span id="to">TO</span>
+            <input id="amount2" disabled placeholder="Converted Amount"/>
+            <select id="currency2"></select>
+          </div>
+          <div id="rate-conv-info">Exchange Rate: <span id="rate"></span></div>
+        </div>
+        <div class="conversion-box">
+          <h2>Unit Conversion</h2>
+          <div class="unit-conversion-box">
+            <input id="unit-input" placeholder="Value"/>
+            <select id="unit-from">
+              <option value="feet">Feet</option>
+              <option value="inches">Inches</option>
+              <option value="meters">Meters</option>
+              <option value="centimeters" selected>Centimeters</option>
+              <option value="kilometers">Kilometers</option>
+              <option value="miles">Miles</option>
+            </select>
+            <span id="to">TO</span>
+            <input id="unit-result" disabled placeholder="Converted Unit"/>
+            <select id="unit-to">
+              <option value="feet" selected>Feet</option>
+              <option value="inches">Inches</option>
+              <option value="meters">Meters</option>
+              <option value="centimeters">Centimeters</option>
+              <option value="kilometers">Kilometers</option>
+              <option value="miles">Miles</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src='scripts/tabs.js'></script> 
+  <script src='scripts/time.js'></script>
+  <script src='scripts/temp.js'></script>
+  <script src='scripts/conv.js'></script>
+  <script src='scripts/ascii.js'></script>
 </body>
 </html>
