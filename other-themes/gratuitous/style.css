@@ -1,0 +1,115 @@
+:root {
+    --color-bg: #1d2021;
+    --color-fg: #636869;
+    --color-link: #c9c9c9;
+    --color-link-visited: #c9c9c9;
+    --color-link-hover: #8ad1cf ;
+    --clock-font: "Minecraftia";
+    --text-font: "Coder\'s Crux";
+}
+
+html{
+    display: flex;
+    flex-flow: row nowrap;  
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: var(--color-bg);
+    color: #BBC4C8;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+.time {
+    transform: translate(-50%, -50%);
+    font-family: var(--clock-font);
+    position: absolute;
+    text-align: center;
+    top: 38%;
+    left: 50%;
+    font-size: 42px;
+    letter-spacing: 5px;
+    color: #c9c9c9;
+}
+
+@media (max-width: 768px) {
+    .time {
+        font-size: 32px;
+    }
+}
+
+.title {
+    font-family: var(--text-font);
+    transform: translate(-50%, -50%);
+    position: absolute;
+    text-align: center;
+    top: 42%;
+    left: 50%;
+    color: #3b3d3f;
+    font-size: 24px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+}
+
+
+.category {
+    display: flex;
+    flex-direction: column;
+    width: 170px;
+}
+
+.bookmark {
+    position: absolute;
+    display: flex;
+    justify-content: space-evenly;
+    transform: translate(-50%, -50%);
+    margin: auto;
+    top: 56%;
+    left: calc(50% + 2%);
+}
+
+.bookmarks {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    background: #1d2021;
+}
+
+
+li {
+    display: flex;
+    list-style-type: none;
+    font-family: var(--text-font);
+    font-size: 22px;
+    padding: 2px;
+    list-style-type: none;
+}
+
+a:link {
+    text-decoration: none;
+    color: #adadad;
+}
+
+a:visited {
+    color: #adadad;
+}
+
+a:hover {
+    color: #8ad1cf ;
+}
