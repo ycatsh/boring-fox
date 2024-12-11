@@ -1,4 +1,4 @@
-const ascii_placeholders = [
+const asciiPlaceholders = [
   {
       id: "ascii-placeholder-1",
       content: `
@@ -67,11 +67,13 @@ const ascii_placeholders = [
   },
 ]
 
-function load_ascii_art(art) {
+function loadAsciiArt(art) {
   const placeholder = document.getElementById(art.id);
   if (placeholder) {
       placeholder.innerHTML = art.content;
   }
 }
 
-ascii_placeholders.forEach(load_ascii_art);
+
+// Loads all ASCII art
+asciiPlaceholders.forEach(loadAsciiArt);

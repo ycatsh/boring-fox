@@ -2,22 +2,21 @@
 CURRENCY CONVERSION CONFIG
 ========================================== */
 
-const api_key = "";  //Example (put your ExchangeRate-API key here)
+const apiKey = "";  //Example (put your ExchangeRate-API key here)
 
 
 // Currency Conversion
-const amt_element = document.getElementById('amount1');
-const curr_element = document.getElementById('currency1');
-const conv_amt_element = document.getElementById('amount2');
-const conv_curr_element = document.getElementById('currency2');
-const rate_element = document.getElementById('rate');
+const amtElement = document.getElementById('amount1');
+const currElement = document.getElementById('currency1');
+const convAmtElement = document.getElementById('amount2');
+const convCurrElement = document.getElementById('currency2');
+const rateElement = document.getElementById('rate');
 
-amt_element.addEventListener('input', convert_currency);
-curr_element.addEventListener('change', convert_currency);
-conv_curr_element.addEventListener('change', convert_currency);
+amtElement.addEventListener('input', convert_currency);
+currElement.addEventListener('change', convert_currency);
+convCurrElement.addEventListener('change', convert_currency);
 
-
-function add_currencies(select_element, options, default_value) {
+function add_currencies(selectElement, options, default_value) {
     options.forEach(option => {
         const optionElement = document.createElement('option');
         optionElement.value = option;
@@ -27,49 +26,46 @@ function add_currencies(select_element, options, default_value) {
             optionElement.selected = true;
         }
 
-        select_element.appendChild(optionElement);
+        selectElement.appendChild(optionElement);
     });
 }
 
 async function update_currencies() {
     const currencies = ["USD", "EUR", "GBP", "JPY"];
 
-    add_currencies(curr_element, currencies, "USD");
-    add_currencies(conv_curr_element, currencies, "EUR");
+    add_currencies(currElement, currencies, "USD");
+    add_currencies(convCurrElement, currencies, "EUR");
 }
 
 async function convert_currency() {
-    const amt = parseFloat(amt_element.value);
-    const curr = curr_element.value;
-    const conv_curr = conv_curr_element.value;
+    const amt = parseFloat(amtElement.value);
+    const curr = currElement.value;
+    const convCurr = convCurrElement.value;
 
     if (isNaN(amt)) {
-        conv_amt_element.value = '';
+        convAmtElement.value = '';
         return;
     }
 
     try {
-        const response = await fetch(`https://v6.exchangerate-api.com/v6/${api_key}/latest/${curr}`);
+        const response = await fetch(`https://v6.exchangerate-api.com/v6/${apiKey}/latest/${curr}`);
         const data = await response.json();
 
         if (data.result === 'error') {
             throw new Error(data['error-type']);
         }
 
-        const rate = data.conversion_rates[conv_curr];
+        const rate = data.conversion_rates[convCurr];
         const conv_amt = amt * rate;
 
-        rate_element.innerHTML = ` ${rate}`;
-        conv_amt_element.value = conv_amt.toFixed(2);
+        rateElement.innerHTML = ` ${rate}`;
+        convAmtElement.value = conv_amt.toFixed(2);
     } 
     catch (error) {
-        rate_element.innerHTML = `Error. Check API key.`;
+        rateElement.innerHTML = `Error. Check API key.`;
         console.log('Error:', error);
     }
 }
-
-update_currencies();
-
 
 // Unit Conversion
 const unitInput = document.getElementById('unit-input');
@@ -100,8 +96,15 @@ function convert_units() {
     unitResult.value = `${convertedValue.toFixed(2)}`;
 }
 
+
+// Adds currencies
+update_currencies();
+
+// Defaults
 unitFromSelect.value = "centimeters";
 unitToSelect.value = "feet";
+
+// Listeners
 unitInput.addEventListener('input', convert_units);
 unitFromSelect.addEventListener('change', convert_units);
 unitToSelect.addEventListener('change', convert_units);

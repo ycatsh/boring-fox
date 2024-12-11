@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
-    real_time_clock();
+    realTimeClock();
 });
 
-function real_time_clock() {
+function realTimeClock() {
     var clock = new Date();
     var hours = clock.getHours();
     var minutes = clock.getMinutes();
@@ -16,5 +16,5 @@ function real_time_clock() {
     if (clockElement) {
         clockElement.innerHTML = hours + ":" + minutes + " " + amPm;
     }
-    setTimeout(real_time_clock, 500);
+    setTimeout(realTimeClock, 500);
 }
