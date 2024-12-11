@@ -1,0 +1,132 @@
+{
+  "tabs": [
+    {
+      "id": "content1",
+      "label": "1",
+      "categories": [
+        {
+          "name": "Category 1",
+          "links": [
+            { "text": "Link #1", "href": "" },
+            { "text": "Link #2", "href": "" },
+            { "text": "Link #3", "href": "" },
+            { "text": "Link #4", "href": "" }
+          ]
+        },
+        {
+          "name": "Category 2",
+          "links": [
+            { "text": "Link #5", "href": "" },
+            { "text": "Link #6", "href": "" },
+            { "text": "Link #7", "href": "" },
+            { "text": "Link #8", "href": "" }
+          ]
+        },
+        {
+          "name": "Category 3",
+          "links": [
+            { "text": "Link #1", "href": "" },
+            { "text": "Link #2", "href": "" },
+            { "text": "Link #3", "href": "" },
+            { "text": "Link #4", "href": "" }
+          ]
+        },
+        {
+          "name": "Category 4",
+          "links": [
+            { "text": "Link #1", "href": "" },
+            { "text": "Link #2", "href": "" },
+            { "text": "Link #3", "href": "" },
+            { "text": "Link #4", "href": "" }
+          ]
+        },
+        {
+          "name": "Category 5",
+          "links": [
+            { "text": "Link #1", "href": "" },
+            { "text": "Link #2", "href": "" },
+            { "text": "Link #3", "href": "" },
+            { "text": "Link #4", "href": "" }
+          ]
+        },
+        {
+          "name": "Category 6",
+          "links": [
+            { "text": "Link #1", "href": "" },
+            { "text": "Link #2", "href": "" },
+            { "text": "Link #3", "href": "" },
+            { "text": "Link #4", "href": "" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "content2",
+      "label": "2",
+      "categories": [
+        {
+          "name": "Category 1",
+          "links": [
+            { "text": "Link #1", "href": "" },
+            { "text": "Link #2", "href": "" },
+            { "text": "Link #3", "href": "" },
+            { "text": "Link #4", "href": "" }
+          ]
+        },
+        {
+          "name": "Category 2",
+          "links": [
+            { "text": "Link #5", "href": "" },
+            { "text": "Link #6", "href": "" },
+            { "text": "Link #7", "href": "" },
+            { "text": "Link #8", "href": "" }
+          ]
+        },
+        {
+          "name": "Category 3",
+          "links": [
+            { "text": "Link #1", "href": "" },
+            { "text": "Link #2", "href": "" },
+            { "text": "Link #3", "href": "" },
+            { "text": "Link #4", "href": "" }
+          ]
+        },
+        {
+          "name": "Category 4",
+          "links": [
+            { "text": "Link #1", "href": "" },
+            { "text": "Link #2", "href": "" },
+            { "text": "Link #3", "href": "" },
+            { "text": "Link #4", "href": "" }
+          ]
+        },
+        {
+          "name": "Category 5",
+          "links": [
+            { "text": "Link #1", "href": "" },
+            { "text": "Link #2", "href": "" },
+            { "text": "Link #3", "href": "" },
+            { "text": "Link #4", "href": "" }
+          ]
+        },
+        {
+          "name": "Category 6",
+          "links": [
+            { "text": "Link #1", "href": "" },
+            { "text": "Link #2", "href": "" },
+            { "text": "Link #3", "href": "" },
+            { "text": "Link #4", "href": "" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "content3",
+      "label": "3"
+    },
+    {
+      "id": "content4",
+      "label": "4"
+    }
+  ]
+}
