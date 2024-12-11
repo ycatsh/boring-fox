@@ -13,14 +13,14 @@ Boring-Fox is primarily developed with [JavaScript](https://en.wikipedia.org/wik
 </div>
 
 ## Features
-Boring-Fox offers a window with tabs-like buttons to organise its functionality. It has a range of helpful features designed to elevate your browsing experience. They are not cluttered and all over the place; rather, they're thoughtfully placed with the intent of keeping your browser distraction-free. 
+Boring-Fox offers a window with tabs-like buttons to organise its functionality. It isn't cluttered; rather, thoughtfully placed with the intent of keeping your homepage distraction-free. 
 
 <br>
 
 ### Tab based bookmarks
 ![1](https://github.com/user-attachments/assets/b0207ce3-d3fd-4f9f-b3cb-752f800c5391)
 <br>
-Experience a visually stunning browsing interface with the theme's minimalist design and functional yet elegant features.
+Organize your several bookmarks efficiently via tabs. To customize your bookmarks, open `bookmarks.json` and edit the links as required.
 
 <br>
 
@@ -42,10 +42,10 @@ Convert currencies and units whenever you want. To set up currency conversion ma
 
 
 ## Configuration  
-The theme can be configured and customized by editing the `scripts/tabs.js`, `scripts/temp.js`, `scripts/conv.js` files. It is pretty self explanatory but it allows you to update/add the following:  
-1. API keys
-2. Location information 
-3. Bookmarks
+The theme can be configured and customized by editing the `bookmarks.json`, `scripts/temp.js`, `scripts/conv.js` files. It is pretty self explanatory but it allows you to update/add the following:  
+1. `bookmarks.json`: Add and customize bookmarks.
+2. `temp.js`: API key and location information.
+3. `conv.js`: API key and add/change currencies (use ISO 4217 currency codes).
 
 
 <br>
@@ -53,13 +53,9 @@ The theme can be configured and customized by editing the `scripts/tabs.js`, `sc
 
 
 ## Instructions   
-The below step-by-step guide is divided into three parts: colors, userChrome.css mods, and modifying the new tab and homepage. If you want the same look as the screenshots, follow all three; otherwise, you can choose to use your own colors or skip the userChrome.css mods as needed.
+The below step-by-step guide is divided into three parts: modifying the new tab and homepage, userChrome.css mods, and colors. If you want the same look as the screenshots, follow all three; otherwise, you can choose to use your own colors or skip the userChrome.css mods as needed.
 
-### Colors
-
-1. Download the [Firefox Color](https://addons.mozilla.org/en-US/firefox/addon/firefox-color/) add-on. To use the default colors of the theme, click [here](https://color.firefox.com/?theme=XQAAAAKEAwAAAAAAAABBKYhm849SCicxcUUSqiuG_ebZUZXOFqq-xzYqmKAKYyDZnHmbjO_VoNYUbmDc3gyZbFcmGEcSMfG8ny6dpdlnCVFOUqWQLLOzXX9FMWXkGoYmv23LdNR0bxjv21c6KuertwF-2DfJrieaJoQiNFgzILPpf7JMvqJC3-4gCbd-jB8szjUT20cXTTEvNV51fgMppmUS9oPJ17SnB84E6hdIg0ll2YYSCofK4P2Komedrb2jIs6b2I2_217C1iobfQ8vbPNz5whJrWZPuzNOFL60yNcXibipXbZddNhCNiBUOfxwgsjHhJAOwGsvPRjpul33ZP4dYjkM1-8zDfX4JS4iS0xZcyahdrJi_th_tTbCnhfq3sfXFkNthF2fVUAyyU8fpCb6uVF3xaPr_Z2Be1xlSY_2pCchjmuvnVCoBOCyxxOBQ5ltOt5eskg0zSl47hr4LP9g8E1MyzfhxxGwW4zU5j1ZRW_bBajyUw3VDGublCv9KsT1) to add them to Firefox. You can also customize the colors to your liking. 
-
-### Custom Styling
+### Custom Firefox Styling (userChrome.css mods)
 
 1. On the Firefox url bar, enter `about:config` and set `toolkit.legacyUserProfileCustomizations.stylesheets` to `true` to enable CSS customization. 
 
@@ -67,7 +63,7 @@ The below step-by-step guide is divided into three parts: colors, userChrome.css
    
 3. Copy `chrome/` and `boring-fox/` from this repo into the profile folder.
 
-### Start Page
+### Custom homepage/startpage (as newtab too)
 
 1. Find your Firefox directory corresponding to your operation system:
 - Linux: output of `whereis firefox`
@@ -97,6 +93,10 @@ The below step-by-step guide is divided into three parts: colors, userChrome.css
 3. Change homepage under Firefox settings to 'Custom URLs' and paste in the same path (to the index.html) as step 2.
 
 4. Restart Firefox. 
+
+### Colors
+
+1. Download the [Firefox Color](https://addons.mozilla.org/en-US/firefox/addon/firefox-color/) add-on. To use the default colors of the theme, click [here](https://color.firefox.com/?theme=XQAAAAKEAwAAAAAAAABBKYhm849SCicxcUUSqiuG_ebZUZXOFqq-xzYqmKAKYyDZnHmbjO_VoNYUbmDc3gyZbFcmGEcSMfG8ny6dpdlnCVFOUqWQLLOzXX9FMWXkGoYmv23LdNR0bxjv21c6KuertwF-2DfJrieaJoQiNFgzILPpf7JMvqJC3-4gCbd-jB8szjUT20cXTTEvNV51fgMppmUS9oPJ17SnB84E6hdIg0ll2YYSCofK4P2Komedrb2jIs6b2I2_217C1iobfQ8vbPNz5whJrWZPuzNOFL60yNcXibipXbZddNhCNiBUOfxwgsjHhJAOwGsvPRjpul33ZP4dYjkM1-8zDfX4JS4iS0xZcyahdrJi_th_tTbCnhfq3sfXFkNthF2fVUAyyU8fpCb6uVF3xaPr_Z2Be1xlSY_2pCchjmuvnVCoBOCyxxOBQ5ltOt5eskg0zSl47hr4LP9g8E1MyzfhxxGwW4zU5j1ZRW_bBajyUw3VDGublCv9KsT1) to add them to Firefox. You can also customize the colors to your liking. 
 
 <br>
 
