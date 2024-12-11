@@ -91,7 +91,14 @@ h1 {
 }
 
 #time-line {
-    margin-top: 30px;
+    margin-top: 32px;
+    margin-bottom: -8px;
+    letter-spacing: 1.5px;
+    word-spacing: 5px;
+}
+
+#line {
+    margin-top: 32px;
     margin-bottom: 30px;
     letter-spacing: 1.5px;
     word-spacing: 5px;
@@ -129,8 +136,8 @@ h1 {
 
 .folder {
     font-size: var(--font-size-smaller);
-    margin-top: 5%;
-    margin-bottom: 1.5%;
+    margin-top: 44px;
+    margin-bottom: 8px;
     width: 300px;
     letter-spacing: 1px;
     display: block;
@@ -150,24 +157,13 @@ a {
     padding: 4px;
 }
 
-a:hover {
-    background-color: var(--link-hover-bg);
-}
-
 .columns {
     display: flex;
     justify-content: space-between;
-    margin-top: -20px;
 }
 
 .column {
     width: 50%;
-}
-
-#folder-2 {
-    font-family: var(--font-primary);
-    width: 250px;
-    margin-bottom: 5%;
 }
 
 
@@ -310,8 +306,4 @@ select {
     font-size: var(--font-size-mini);
     margin-left: 55%;
     margin-top: 10%;
-}
-
-#ascii-placeholder-4 {
-    margin-right: 25%;
 }

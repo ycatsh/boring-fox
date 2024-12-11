@@ -42,19 +42,28 @@ async function populateContent(contentId) {
 
     if (!tabData || !contentElement) return;
 
-    const html = tabData.categories.map(category => `
-        <li>
-            <span class="folder">${category.name}</span>
-            <ul class="sub-list">
-                ${category.links.map(link => `<li><a href="${link.href}">${link.text}</a></li>`).join('')}
-            </ul>
-        </li>
-    `).join('');
+    const columns = contentElement.getElementsByClassName("column");
 
-    const bookmarksContainer = document.createElement("div");
-    bookmarksContainer.className = "dynamic-bookmarks";
-    bookmarksContainer.innerHTML = `<ul class="bookmark-list">${html}</ul>`;
-    contentElement.appendChild(bookmarksContainer);
+    // Clear previous content in columns
+    Array.from(columns).forEach(column => (column.innerHTML = ""));
+
+    tabData.categories.forEach((category, i) => {
+        const j = Math.floor(i / 2);
+        if (columns[j]) {
+            const html = `
+                <li>
+                    <span class="folder">${category.name}</span>
+                    <ul class="sub-list">
+                        ${category.links.map(link => `<li><a href="${link.href}">${link.text}</a></li>`).join('')}
+                    </ul>
+                </li>
+            `;
+            const bookmarksContainer = document.createElement("div");
+            bookmarksContainer.className = "bookmarks-container";
+            bookmarksContainer.innerHTML = `<ul class="bookmark-list">${html}</ul>`;
+            columns[j].appendChild(bookmarksContainer);
+        }
+    });
 }
 
 function showContent(event) {
@@ -70,7 +79,6 @@ function showContent(event) {
         populateContent(contentId);
         contentElement.dataset.populated = "true";
     }
-
     contentElement.style.display = "block";
 
     const tabs = document.getElementsByClassName("tab");
