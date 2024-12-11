@@ -20,7 +20,7 @@ Boring-Fox offers a window with tabs-like buttons to organise its functionality.
 ### Tab based bookmarks
 ![1](https://github.com/user-attachments/assets/b0207ce3-d3fd-4f9f-b3cb-752f800c5391)
 <br>
-Organize your several bookmarks efficiently via tabs. To customize your bookmarks, open `bookmarks.json` and edit the links as required.
+Organize your several bookmarks efficiently via tabs. To customize your bookmarks, open `scripts/tabs.js` and edit the links as required. The bookmarks are formatted in json format in the file for easy modification.
 
 <br>
 
@@ -42,8 +42,8 @@ Convert currencies and units whenever you want. To set up currency conversion ma
 
 
 ## Configuration  
-The theme can be configured and customized by editing the `bookmarks.json`, `scripts/temp.js`, `scripts/conv.js` files. It is pretty self explanatory but it allows you to update/add the following:  
-1. `bookmarks.json`: Add and customize bookmarks.
+The theme can be configured and customized by editing the `scripts/tabs.js`, `scripts/temp.js`, `scripts/conv.js` files. It is pretty self explanatory but it allows you to update/add the following:  
+1. `tabs.js`: Add and customize bookmarks.
 2. `temp.js`: API key and location information.
 3. `conv.js`: API key and add/change currencies (use ISO 4217 currency codes).
 
