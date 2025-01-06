@@ -18,21 +18,21 @@ Boring-Fox offers a window with tabs-like buttons to organise its functionality.
 <br>
 
 ### Tab based bookmarks
-![1](https://github.com/user-attachments/assets/b0207ce3-d3fd-4f9f-b3cb-752f800c5391)
+![1](./.github/assets/tabs.png)
 <br>
 Organize your several bookmarks efficiently via tabs. To customize your bookmarks, open `scripts/tabs.js` and edit the links as required. The bookmarks are formatted in json format in the file for easy modification.
 
 <br>
 
 ### Weather Information 
-![2](https://github.com/user-attachments/assets/9a1a400d-3c34-4fe7-b8e9-9d92edc68e95)
+![2](./.github/assets/temp.png)
 <br>
 Check the weather right on your Firefox homepage for convenient access to up-to-date information. To set this up make an account with [openweathermap](https://openweathermap.org/) and paste your API key in the `scripts/temp.js` file.
 
 <br>
 
 ### Useful Tools 
-![3](https://github.com/user-attachments/assets/f3400e3c-9651-44cc-b7e8-4d73c482bc5a)
+![3](./.github/assets/conv.png)
 <br>
 Convert currencies and units whenever you want. To set up currency conversion make an account with [exchangerate-api](https://app.exchangerate-api.com/) and paste your API key in the `scripts/conv.js` file.
 
