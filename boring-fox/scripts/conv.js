@@ -1,5 +1,5 @@
 /* ==========================================
-CURRENCY CONVERSION CONFIG
+    CURRENCY CONVERSION CONFIG
 ========================================== */
 
 const apiKey = "";  //Example (put your ExchangeRate-API key here)
