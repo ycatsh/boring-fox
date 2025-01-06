@@ -1,5 +1,5 @@
 /* ==========================================
-TABS AND BOOKMARKS CONFIG
+    TABS AND BOOKMARKS CONFIG
 ========================================== */
 
 const DATA = {
