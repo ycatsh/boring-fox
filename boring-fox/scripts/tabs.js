@@ -161,10 +161,7 @@ function populateTabs() {
 }
 
 async function populateContent(contentId) {
-    const response = await fetch('bookmarks.json');
-    const jsonData = await response.json();
-    
-    const tabData = jsonData.tabs.find(tab => tab.id === contentId);
+    const tabData = DATA.tabs.find(tab => tab.id === contentId);
     const contentElement = document.getElementById(contentId);
     
     if (!tabData || !contentElement) return;
