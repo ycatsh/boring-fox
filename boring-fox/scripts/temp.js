@@ -42,25 +42,25 @@ window.addEventListener('load', () => {
 
 function getIcon(code) {
     const iconMap = {
-        '01d': { png: 'static/assets/icons/sun.png'},
-        '02d': { png: 'static/assets/icons/cloud-sun.png'},
-        '03d': { png: 'static/assets/icons/cloud.png'},
-        '04d': { png: 'static/assets/icons/cloud.png'},
-        '09d': { png: 'static/assets/icons/cloud-rain.png'},
-        '10d': { png: 'static/assets/icons/cloud-sun-rain.png'},
-        '11d': { png: 'static/assets/icons/bolt.png'},
-        '13d': { png: 'static/assets/icons/snowflake.png'},
-        '50d': { png: 'static/assets/icons/smog.png'},
-        '01n': { png: 'static/assets/icons/moon.png'},
-        '02n': { png: 'static/assets/icons/cloud-moon.png'},
-        '03n': { png: 'static/assets/icons/cloud.png'},
-        '04n': { png: 'static/assets/icons/cloud.png'},
-        '09n': { png: 'static/assets/icons/cloud-rain.png'},
-        '10n': { png: 'static/assets/icons/cloud-moon-rain.png'},
-        '11n': { png: 'static/assets/icons/bolt.png'},
-        '13n': { png: 'static/assets/icons/snowflake.png'},
-        '50n': { png: 'static/assets/icons/smog.png'}
+        '01d': { png: 'static/assets/icons/sun.png' },
+        '02d': { png: 'static/assets/icons/cloud-sun.png' },
+        '03d': { png: 'static/assets/icons/cloud.png' },
+        '04d': { png: 'static/assets/icons/cloud.png' },
+        '09d': { png: 'static/assets/icons/cloud-rain.png' },
+        '10d': { png: 'static/assets/icons/cloud-sun-rain.png' },
+        '11d': { png: 'static/assets/icons/bolt.png' },
+        '13d': { png: 'static/assets/icons/snowflake.png' },
+        '50d': { png: 'static/assets/icons/smog.png' },
+        '01n': { png: 'static/assets/icons/moon.png' },
+        '02n': { png: 'static/assets/icons/cloud-moon.png' },
+        '03n': { png: 'static/assets/icons/cloud.png' },
+        '04n': { png: 'static/assets/icons/cloud.png' },
+        '09n': { png: 'static/assets/icons/cloud-rain.png' },
+        '10n': { png: 'static/assets/icons/cloud-moon-rain.png' },
+        '11n': { png: 'static/assets/icons/bolt.png' },
+        '13n': { png: 'static/assets/icons/snowflake.png' },
+        '50n': { png: 'static/assets/icons/smog.png' }
     };
     
-    return iconMap[code] || { png: 'static/assets/icons/question.png'};
+    return iconMap[code] || { png: 'static/assets/icons/question.png' };
 }
