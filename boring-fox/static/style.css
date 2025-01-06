@@ -298,7 +298,6 @@ select {
 #weather-error {
     line-height: 1.3em;
     width: 50%;
-    margin-top: 80px;
 }
 
 #weather-forecast{
