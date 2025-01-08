@@ -52,7 +52,7 @@ window.addEventListener('load', () => {
                 const day = getDay(item.dt_txt.split(' ')[0]).slice(0, 3);
 
                 if (!dailyForecast[day]) {
-                    dailyForecast[day] = { dayTemp: null, nightTemp: null };
+                    dailyForecast[day] = { dayTemp: '?', nightTemp: '?' };
                 }
                 
                 // Day and night
