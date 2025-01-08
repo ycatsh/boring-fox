@@ -269,7 +269,7 @@ select {
 }
 
 .stats {
-    font-family: var(--font-secondary);
+    font-family: var(--font-mono);
     font-size: var(--font-size-content);
     color: #828586;
     margin-top: 140px;
@@ -305,10 +305,21 @@ select {
     gap: 42px;
 }
 
+#forecast {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
 #forecast-days {
-    font-family: var(--font-secondary);
+    font-family: var(--font-mono);
     font-size: 18px;
     padding-bottom: 10px;
+}
+
+#forecast-icon {
+    padding: 10px;
 }
 
 #forecast-temp {
