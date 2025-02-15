@@ -2,6 +2,7 @@
     TABS AND BOOKMARKS CONFIG
 ========================================== */
 
+// Note: include https:// in the link (href)
 const DATA = {
   "tabs": [
     {
