@@ -1,76 +1,270 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <link rel="icon" type="image/x-icon" href="static/assets/favicon.png">
-    <link rel="stylesheet" type="text/css" href="static/style.css">
-    <title>startpage</title>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/x-icon" href="static/assets/favicon.png">
+  <link rel="stylesheet" type="text/css" href="static/style.css">
+  <title>startpage</title>
 </head>
 
 <body>
-    <div class="container">
-        <div class="tabs" id="tab-group"></div>
-
-        <div class="content" id="content3">
-            <h1><pre class='ascii' id='ascii-placeholder-3'></pre></h1>
-            <div class="weather">
-                <div id="weather-city"></div>
-                <div id="icon-wrapper">
-                    <div id="weather-icon"></div>
-                    <div id="weather-info"></div>
-                </div>
-                <div id="weather-temp"></div>
-                <div id="weather-forecast"></div>
-                <div id="weather-error"></div>
-            </div>
+  <div class="container">
+    <div class="tabs" id="tab-group"></div>
+    <div class="content" id="content1">
+      <h1><pre class="ascii" id="ascii-placeholder-1"></h1></pre>
+      <h1 id="time-line">Better not be slackin cuz its already:&nbsp<span id="clock"></span> Temp: 2°C <img src="static/assets/icons/cloud-rain.png" style="width: 24px; height: 24px; filter: grayscale(100%);"><span id="temp"></span></h1>
+      <br>
+      <div class="columns">
+        <div class="column">
+          <ul class="bookmark-list">
+            <li>
+              <span class="folder">Category 1</span>
+              <ul class="sub-list">
+                <li><a href="">link #1</a></li>
+                <li><a href="">link #2</a></li>
+                <li><a href="">link #3</a></li>
+                <li><a href="">link #4</a></li>
+              </ul>
+            </li>
+            <br>
+            <li>
+              <span class="folder">Category 2</span>
+              <ul class="sub-list">
+                <li><a href="">link #5</a></li>
+                <li><a href="">link #6</a></li>
+                <li><a href="">link #7</a></li>
+                <li><a href="">link #8</a></li>
+              </ul>
+            </li>
+          </ul>
         </div>
-
-        <div class="content" id="content4">
-            <h1><pre class='ascii' id='ascii-placeholder-4'></pre></h1>
-            <h1 id="time-line">Currency and Unit Conversions Toolbox</h1>
-            <div class="conversion-container">
-                <div class="conversion-box">
-                    <h2>Currency Converter</h2>
-                    <div class="currency">
-                        <input id="amount1" placeholder="Amount"/>
-                        <select id="currency1"></select>
-                        <span id="to">TO</span>
-                        <input id="amount2" disabled placeholder="Converted Amount"/>
-                        <select id="currency2"></select>
-                    </div>
-                    <div id="rate-conv-info">Exchange Rate: <span id="rate"></span></div>
-                </div>
-                <div class="conversion-box">
-                    <h2>Unit Conversion</h2>
-                    <div class="unit-conversion-box">
-                        <input id="unit-input" placeholder="Value"/>
-                        <select id="unit-from">
-                            <option value="feet">Feet</option>
-                            <option value="inches">Inches</option>
-                            <option value="meters">Meters</option>
-                            <option value="centimeters" selected>Centimeters</option>
-                            <option value="kilometers">Kilometers</option>
-                            <option value="miles">Miles</option>
-                        </select>
-                        <span id="to">TO</span>
-                        <input id="unit-result" disabled placeholder="Converted Unit"/>
-                        <select id="unit-to">
-                            <option value="feet" selected>Feet</option>
-                            <option value="inches">Inches</option>
-                            <option value="meters">Meters</option>
-                            <option value="centimeters">Centimeters</option>
-                            <option value="kilometers">Kilometers</option>
-                            <option value="miles">Miles</option>
-                        </select>
-                    </div>
-                </div>
-            </div>
+        <div class="column">
+          <ul class="bookmark-list">
+            <li>
+              <span class="folder">Category 3</span>
+              <ul class="sub-list">
+                <li><a href="">link #9</a></li>
+                <li><a href="">link #10</a></li>
+                <li><a href="">link #11</a></li>
+                <li><a href="">link #12</a></li>
+              </ul>
+            </li>
+            <br>
+            <li>
+              <span class="folder">Category 4</span>
+              <ul class="sub-list">
+                <li><a href="">link #13</a></li>
+                <li><a href="">link #14</a></li>
+                <li><a href="">link #15</a></li>
+                <li><a href="">link #16</a></li>
+              </ul>
+            </li>
+          </ul>
         </div>
+        <div class="column">
+          <ul class="bookmark-list">
+            <li>
+              <span class="folder">Category 5</span>
+              <ul class="sub-list">
+                <li><a href="">link #17</a></li>
+                <li><a href="">link #18</a></li>
+                <li><a href="">link #19</a></li>
+                <li><a href="">link #20</a></li>
+              </ul>
+            </li>
+            <br>
+            <li>
+              <span class="folder">Category 6</span>
+              <ul class="sub-list">
+                <li><a href="">link #21</a></li>
+                <li><a href="">link #22</a></li>
+                <li><a href="">link #23</a></li>
+                <li><a href="">link #24</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
-    <script src='scripts/tabs.js'></script> 
-    <script src='scripts/time.js'></script>
-    <script src='scripts/temp.js'></script>
-    <script src='scripts/conv.js'></script>
-    <script src='scripts/ascii.js'></script>
+    
+    
+    <div class="content" id="content2">
+      <br>
+      <br>
+      <div class="columns">
+        <div class="column">
+          <ul class="bookmark-list">
+            <li>
+              <span class="folder">Category 7</span>
+              <ul class="sub-list">
+                <li><a href="">link #25</a></li>
+                <li><a href="">link #26</a></li>
+                <li><a href="">link #27</a></li>
+                <li><a href="">link #28</a></li>
+              </ul>
+            </li>
+            <br>
+            <li>
+              <span class="folder">Category 8</span>
+              <ul class="sub-list">
+                <li><a href="">link #29</a></li>
+                <li><a href="">link #30</a></li>
+                <li><a href="">link #31</a></li>
+                <li><a href="">link #32</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="column">
+          <ul class="bookmark-list">
+            <li>
+              <span class="folder">Category 9</span>
+              <ul class="sub-list">
+                <li><a href="">link #33</a></li>
+                <li><a href="">link #34</a></li>
+                <li><a href="">link #35</a></li>
+                <li><a href="">link #36</a></li>
+              </ul>
+            </li>
+            <br>
+            <li>
+              <span class="folder">Category 10</span>
+              <ul class="sub-list">
+                <li><a href="">link #37</a></li>
+                <li><a href="">link #38</a></li>
+                <li><a href="">link #39</a></li>
+                <li><a href="">link #40</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="column">
+          <ul class="bookmark-list">
+            <li>
+              <span class="folder">Category 11</span>
+              <ul class="sub-list">
+                <li><a href="">link #41</a></li>
+                <li><a href="">link #42</a></li>
+                <li><a href="">link #43</a></li>
+                <li><a href="">link #44</a></li>
+              </ul>
+            </li>
+            <br>
+            <li>
+              <span class="folder">Category 12</span>
+              <ul class="sub-list">
+                <li><a href="">link #45</a></li>
+                <li><a href="">link #46</a></li>
+                <li><a href="">link #47</a></li>
+                <li><a href="">link #48</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+    <div class="content" id="content3">
+      <h1><pre class="ascii" id="ascii-placeholder-3"></pre></h1>
+      <div class="wrapper">
+        <div class="wrapper-top">
+          <div class="weather">
+            <div id="weather-city">Helsinki, Finland</div>
+            <div id="icon-wrapper">
+              <div id="weather-icon"><img src="static/assets/icons/cloud-rain.png" style="width: 48px; height: 48px;"></div>
+              <div id="weather-info">light intensity drizzle</div>
+            </div>
+            <div id="weather-temp">
+              <div style="color: #6d7072;">Temperature</div>
+              <div>2°C</div>
+            </div>
+            <div id="weather-error"></div>
+          </div>
+          <div class="stats">
+            <div id="weather-stats">
+              <div>Humidity: 86% </div>
+              <div>Wind: 34 km/h</div>
+            </div>
+          </div>
+        </div>
+        <div id="weather-forecast">
+          <div id="forecast">
+            <div id="forecast-days">Tue</div>
+            <img id="forecast-icon" src="static/assets/icons/cloud-moon-rain.png" style="width: 42px; height: 42px;">
+            <div id="forecast-temp">3°C&#176&nbsp&nbsp<span id="night-temp">2°C&#176</span></div>
+          </div>
+          <div id="forecast">  
+            <div id="forecast-days">Wed</div>
+            <img id="forecast-icon" src="static/assets/icons/cloud-moon-rain.png" style="width: 42px; height: 42px;">
+            <div id="forecast-temp">-1°C&#176&nbsp&nbsp<span id="night-temp">2°C&#176</span></div>
+          </div>
+          <div id="forecast">  
+            <div id="forecast-days">Thu</div>
+            <img id="forecast-icon" src="static/assets/icons/cloud.png" style="width: 42px; height: 42px;">
+            <div id="forecast-temp">4°C&#176&nbsp&nbsp<span id="night-temp">3°C&#176</span></div>
+          </div>
+          <div id="forecast">
+            <div id="forecast-days">Fri</div>
+            <img id="forecast-icon" src="static/assets/icons/moon.png" style="width: 42px; height: 42px;">
+            <div id="forecast-temp">4°C&#176&nbsp&nbsp<span id="night-temp">2°C&#176</span></div>
+          </div>
+          <div id="forecast">
+            <div id="forecast-days">Sat</div>
+            <img id="forecast-icon" src="static/assets/icons/cloud-sun.png" style="width: 42px; height: 42px;">
+            <div id="forecast-temp">8°C&#176&nbsp&nbsp<span id="night-temp">1°C&#176</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="content" id="content4">
+      <h1><pre class='ascii' id='ascii-placeholder-4'></pre></h1>
+      <h1 id="line">Currency and Unit Conversions Toolbox</h1>
+      <div class="conversion-container">
+        <div class="conversion-box">
+          <h2>Currency Converter</h2>
+          <div class="currency">
+            <input id="amount1" placeholder="Amount"/>
+            <select id="currency1"></select>
+            <span id="to">TO</span>
+            <input id="amount2" disabled placeholder="Converted Amount"/>
+            <select id="currency2"></select>
+          </div>
+          <div id="rate-conv-info">Exchange Rate: <span id="rate"></span></div>
+        </div>
+        <div class="conversion-box">
+          <h2>Unit Conversion</h2>
+          <div class="unit-conversion-box">
+            <input id="unit-input" placeholder="Value"/>
+            <select id="unit-from">
+              <option value="feet">Feet</option>
+              <option value="inches">Inches</option>
+              <option value="meters">Meters</option>
+              <option value="centimeters" selected>Centimeters</option>
+              <option value="kilometers">Kilometers</option>
+              <option value="miles">Miles</option>
+            </select>
+            <span id="to">TO</span>
+            <input id="unit-result" disabled placeholder="Converted Unit"/>
+            <select id="unit-to">
+              <option value="feet" selected>Feet</option>
+              <option value="inches">Inches</option>
+              <option value="meters">Meters</option>
+              <option value="centimeters">Centimeters</option>
+              <option value="kilometers">Kilometers</option>
+              <option value="miles">Miles</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    This is a demo site with made-up values. Real-time values will reflect when you set-up API keys in your local download as per the <a id="info-link" href="https://github.com/ycatsh/boring-fox/tree/main?tab=readme-ov-file#instructions">guide.</a>
+  </footer>
+  <script src='scripts/tabs.js'></script> 
+  <script src='scripts/time.js'></script>
+  <script src='scripts/conv.js'></script>
+  <script src='scripts/ascii.js'></script>
 </body>
 </html>

@@ -63,7 +63,7 @@ async function convert_currency() {
         conv_amt_element.value = conv_amt.toFixed(2);
     } 
     catch (error) {
-        rate_element.innerHTML = `Error. Check API key.`;
+        rate_element.innerHTML = `Error. Check API key. This feature is disabled in the demo.`;
         console.log('Error:', error);
     }
 }
