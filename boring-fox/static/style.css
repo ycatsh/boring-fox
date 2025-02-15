@@ -196,7 +196,8 @@ a {
     margin: 0 0 10px 0;
     font-weight: 200;
     word-spacing: 5px;
-    font-size: var(--font-size-smaller);
+    font-family: var(--font-secondary);
+    font-size: var(--font-size-medium);
 }
 
 .currency, .unit-conversion-box {
@@ -296,6 +297,8 @@ select {
 }
 
 #weather-error {
+    font-family: var(--font-secondary);
+    font-size: var(--font-size-large);
     line-height: 1.3em;
     width: 50%;
 }
