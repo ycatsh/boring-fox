@@ -78,7 +78,7 @@ The below step-by-step guide is divided into three parts: modifying the new tab 
     pref("general.config.sandbox_enabled", false); 
     ```
 
-2. Navigate two directories back to the Firefox directory and create `autoconfig.cfg` and paste in the code below. Make sure to replace `newTabURL` with the path of the `boring-fox/index.html` file (it should look something like this: `file:///<path_to_firefox_dir>/boring-fox/index.html`):
+2. Navigate two directories back to the Firefox directory and create `autoconfig.cfg` and paste in the code below. Make sure to pass the path of the `boring-fox/index.html` file into `newTabURL` (it should look something like this: `file:///<path_to_firefox_dir>/boring-fox/index.html`):  
     ```javascript
     //  
     var {classes:Cc,interfaces:Ci,utils:Cu} = Components;  
@@ -87,7 +87,7 @@ The below step-by-step guide is divided into three parts: modifying the new tab 
     ChromeUtils.defineESModuleGetters(this, {
       AboutNewTab: "resource:///modules/AboutNewTab.sys.mjs",
     });  
-    var newTabURL = "file:///PATH_TO_YOUR_INDEX.html";  
+    var newTabURL = "file:///PATH_TO_YOUR_INDEX.html"; // Add the path to your index.html file here
     AboutNewTab.newTabURL = newTabURL;  
     } catch(e){Cu.reportError(e);} // report errors in the Browser Console  
     ```
