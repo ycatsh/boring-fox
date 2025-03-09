@@ -84,7 +84,9 @@ The below step-by-step guide is divided into three parts: modifying the new tab 
     var {classes:Cc,interfaces:Ci,utils:Cu} = Components;  
     
     try {  
-    Cu.import("resource:///modules/AboutNewTab.jsm");  
+    ChromeUtils.defineESModuleGetters(this, {
+      AboutNewTab: "resource:///modules/AboutNewTab.sys.mjs",
+    });  
     var newTabURL = "file:///PATH_TO_YOUR_INDEX.html";  
     AboutNewTab.newTabURL = newTabURL;  
     } catch(e){Cu.reportError(e);} // report errors in the Browser Console  
