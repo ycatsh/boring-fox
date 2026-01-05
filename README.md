@@ -1,7 +1,4 @@
-![graphic](./.github/assets/main.png)
-<br>
-
-Boring-Fox is primarily developed with [JavaScript](https://en.wikipedia.org/wiki/JavaScript) and [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS). It offers a sophisticated and convenient start page for users who are just a tad bit boring. With its minimal and retro design, Boring-Fox combines boring aesthetics with functionality. The theme enhances your Firefox homepage by providing easy access to bookmarks, weather widgets, as well as unit and currency conversion within a single, cohesive interface.
+Boring-Fox is primarily developed with [JavaScript](https://en.wikipedia.org/wiki/JavaScript) and [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS). It offers a sophisticated and convenient start page for users who are just a tad bit boring. The theme provides easy access to bookmarks, weather widgets, unit and currency conversion within a cohesive interface using tabs.
 <br>
 <br>
 <div align="center">
@@ -13,28 +10,25 @@ Boring-Fox is primarily developed with [JavaScript](https://en.wikipedia.org/wik
 </div>
 
 ## Features
-Boring-Fox offers a window with tabs-like buttons to organise its functionality. It isn't cluttered; rather, thoughtfully placed with the intent of keeping your homepage distraction-free. 
-
-<br>
 
 ### Tab based bookmarks
 ![1](./.github/assets/tabs.png)
 <br>
-Organize your several bookmarks efficiently via tabs. To customize your bookmarks, open `scripts/tabs.js` and edit the links as required. The bookmarks are formatted in json format in the file for easy modification.
+To add your bookmarks, open `scripts/tabs.js` and edit the links as required. The bookmarks are formatted in json format in the file for easy modification.
 
 <br>
 
 ### Weather Information 
 ![2](./.github/assets/temp.png)
 <br>
-Check the weather right on your Firefox homepage for convenient access to up-to-date information. To set this up make an account with [openweathermap](https://openweathermap.org/) and paste your API key in the `scripts/temp.js` file.
+To set this up make an account with [openweathermap](https://openweathermap.org/) and paste your API key in the `scripts/temp.js` file.
 
 <br>
 
 ### Useful Tools 
 ![3](./.github/assets/conv.png)
 <br>
-Convert currencies and units whenever you want. To set up currency conversion make an account with [exchangerate-api](https://app.exchangerate-api.com/) and paste your API key in the `scripts/conv.js` file.
+To set up currency conversion make an account with [exchangerate-api](https://app.exchangerate-api.com/) and paste your API key in the `scripts/conv.js` file.
 
 
 <br>
